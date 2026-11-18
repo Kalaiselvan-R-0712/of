@@ -630,7 +630,7 @@ body {
 #preloader.preloader{align-items:center;cursor:default;display:flex;height:100%;justify-content:center;position:fixed;left:0;top:0;width:100%;z-index:9999999;background:#fff;overflow:hidden;}
 #preloader .animation-preloader{z-index:1000;position:relative;text-align:center;}
 #preloader .animation-preloader .spinner{animation:spinner 1s infinite linear;border-radius:50%;border:3px solid rgba(0,0,0,.2);border-top-color:#547A3D;height:9em;margin:0 auto 3.5em;width:9em;}
-#preloader .animation-preloader .txt-loading{font:700 5em "Manrope",Arial,sans-serif;text-align:center;farmer-select:none;letter-spacing:0;}
+#preloader .animation-preloader .txt-loading{font:700 5em "Manrope",Arial,sans-serif;text-align:center;user-select:none;letter-spacing:0;}
 #preloader .animation-preloader .txt-loading .letters-loading{color:#547A3D;position:relative;}
 #preloader .animation-preloader .txt-loading .letters-loading::before{animation:letters-loading 4s infinite;color:#16243E;content:attr(data-text-preloader);left:0;opacity:0;font-family:"Manrope",Arial,sans-serif;position:absolute;top:-3px;transform:rotateY(-90deg);}
 #preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before{animation-delay:.2s}
@@ -1207,7 +1207,7 @@ h1,h2,h3,h4,h5,h6,.form-heading h1,.visual-copy h2{font-family:Inter,Arial,sans-
 #preloader.preloader{align-items:center;cursor:default;display:flex;height:100%;justify-content:center;position:fixed;left:0;top:0;width:100%;z-index:9999999;background:#fff;overflow:hidden;}
 #preloader .animation-preloader{z-index:1000;position:relative;text-align:center;}
 #preloader .animation-preloader .spinner{animation:spinner 1s infinite linear;border-radius:50%;border:3px solid rgba(0,0,0,.2);border-top-color:#547A3D;height:9em;margin:0 auto 3.5em;width:9em;}
-#preloader .animation-preloader .txt-loading{font:700 5em "Manrope",Arial,sans-serif;text-align:center;farmer-select:none;letter-spacing:0;}
+#preloader .animation-preloader .txt-loading{font:700 5em "Manrope",Arial,sans-serif;text-align:center;user-select:none;letter-spacing:0;}
 #preloader .animation-preloader .txt-loading .letters-loading{color:#547A3D;position:relative;}
 #preloader .animation-preloader .txt-loading .letters-loading::before{animation:letters-loading 4s infinite;color:#16243E;content:attr(data-text-preloader);left:0;opacity:0;font-family:"Manrope",Arial,sans-serif;position:absolute;top:-3px;transform:rotateY(-90deg);}
 #preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before{animation-delay:.2s}
@@ -1572,7 +1572,7 @@ html body .input-wrap textarea:focus{
   box-shadow:0 0 0 3px rgba(120,150,83,.13)!important;
 }
 html body .password-toggle:hover{color:#547a3d!important;background:rgba(120,150,83,.08)!important}
-/* Admin/Farmer and custom role selected states */
+/* Admin/User and custom role selected states */
 html body .role-option.selected,
 html body .role-option.active,
 html body .role-option[aria-pressed="true"],
@@ -1834,7 +1834,7 @@ html body button[type="submit"]{
 <div class="form-group">
 <label for="name">Full Name</label>
 <div class="input-wrap">
-<i class="fa-regular fa-farmer"></i>
+<i class="fa-regular fa-user"></i>
 <input autocomplete="name" id="name" placeholder="Your full name" type="text"/>
 </div>
 <p class="error" id="nameError">Please enter your full name using letters and spaces.</p>
@@ -1843,10 +1843,10 @@ html body button[type="submit"]{
 <label>Account Type</label>
 <div aria-label="Account Type" class="role-select" id="roleSelect" role="radiogroup">
 <button aria-pressed="false" class="role-option" data-value="Admin" type="button">
-<i class="fa-solid fa-farmer-shield"></i><span>ADMIN</span>
+<i class="fa-solid fa-user-shield"></i><span>ADMIN</span>
 </button>
-<button aria-pressed="false" class="role-option" data-value="Farmer" type="button">
-<i class="fa-solid fa-chart-line"></i><span>FARMER</span>
+<button aria-pressed="false" class="role-option" data-value="User" type="button">
+<i class="fa-solid fa-chart-line"></i><span>USER</span>
 </button>
 </div>
 <input id="role" type="hidden" value=""/>
@@ -2013,14 +2013,14 @@ const form=document.getElementById('registerForm');
 
     if(!valid) return;
 
-    const registeredFarmer={
+    const registeredUser={
       name:nameInput.value.trim(),
       email:email.value.trim(),
       role:role.value.trim(),
       registeredAt:new Date().toISOString()
     };
 
-    localStorage.setItem('registeredFarmer',JSON.stringify(registeredFarmer));
+    localStorage.setItem('registeredUser',JSON.stringify(registeredUser));
 
     showStatus('Account created successfully. Redirecting to login...');
     registerButton.disabled=true;

@@ -29,7 +29,7 @@
 .ti-volume:before {
 	content: "\e601";
 }
-.ti-farmer:before {
+.ti-user:before {
 	content: "\e602";
 }
 .ti-unlock:before {

@@ -6,7 +6,7 @@ Source ZIP: New folder(20261117-051731).zip
 - 404.html, ae_404.html and fm_404.html have been converted from the old STACKLY Real Estate look to the STACKLY Organic Farming theme.
 - Updated palette to forest green (#10251a / #1e472b), harvest gold (#b78b3b), and warm cream (#f6f4e6).
 - Updated typography to Manrope + DM Sans, organic-farming imagery, logo, page copy and browser theme colour.
-- Preserved each page's role (general, admin and farmer not-found pages).
+- Preserved each page's role (general, admin and user not-found pages).
 - Added/retained both actions: Back to Previous Page and Back to Home. Previous-page action falls back to index.html when there is no usable history entry.
 - No AOS animations were added to the 404 pages, as requested.
 

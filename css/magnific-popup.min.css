@@ -84,9 +84,9 @@
 .mfp-arrow,
 .mfp-preloader,
 .mfp-counter {
-    -webkit-farmer-select: none;
-    -moz-farmer-select: none;
-    farmer-select: none
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
 }
 
 .mfp-loading.mfp-figure {

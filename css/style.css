@@ -777,7 +777,7 @@ select.form-control {
     color: var(--white-color);
 }
 
-.pq-single-post-farmernav .pq-farmer {
+.pq-single-post-usernav .pq-user {
     background: var(--grey-color);
     padding: 30px;
     display: flex;
@@ -787,11 +787,11 @@ select.form-control {
     border-radius: var(--border-radius);
 }
 
-.pq-single-post-farmernav .pq-farmer .pq-farmer-media {
+.pq-single-post-usernav .pq-user .pq-user-media {
     margin-right: 30px;
 }
 
-.pq-single-post-farmernav .pq-farmer .pq-farmer-media img {
+.pq-single-post-usernav .pq-user .pq-user-media img {
     width: 180px;
     -webkit-border-radius: var(--big--border-radius);
     -moz-border-radius: var(--big--border-radius);
@@ -799,13 +799,13 @@ select.form-control {
     transition: var(--transition-duration);
 }
 
-.pq-single-post-farmernav .pq-farmer-info .pq-farmer-title {
+.pq-single-post-usernav .pq-user-info .pq-user-title {
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 5px;
 }
 
-.pq-single-post-farmernav .pq-farmer-info .pq-farmer-sub-title {
+.pq-single-post-usernav .pq-user-info .pq-user-sub-title {
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
@@ -814,7 +814,7 @@ select.form-control {
     color: var(--primary-color);
 }
 
-.pq-single-post-farmernav .pq-farmer-description {
+.pq-single-post-usernav .pq-user-description {
     margin-bottom: 0;
     margin-top: 10px;
     font-size: 16px;
@@ -844,22 +844,22 @@ select.form-control {
         margin-bottom: 30px;
     }
 
-    .pq-single-post-farmernav .pq-farmer {
+    .pq-single-post-usernav .pq-user {
         align-items: flex-start;
         padding: 15px;
     }
 }
 
 @media (max-width: 497px) {
-    .pq-single-post-farmernav .pq-farmer {
+    .pq-single-post-usernav .pq-user {
         display: block;
     }
 
-    .pq-single-post-farmernav .pq-farmer .pq-farmer-media img {
+    .pq-single-post-usernav .pq-user .pq-user-media img {
         width: 80px;
     }
 
-    .pq-single-post-farmernav .pq-farmer .pq-farmer-media {
+    .pq-single-post-usernav .pq-user .pq-user-media {
         margin-right: 0;
         margin-bottom: 15px;
     }

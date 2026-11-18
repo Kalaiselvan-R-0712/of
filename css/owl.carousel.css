@@ -56,11 +56,11 @@
   .owl-carousel .owl-nav .owl-next,
   .owl-carousel .owl-dot {
     cursor: pointer;
-    -webkit-farmer-select: none;
-    -khtml-farmer-select: none;
-    -moz-farmer-select: none;
-    -ms-farmer-select: none;
-    farmer-select: none; }
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel button.owl-dot {
@@ -81,10 +81,10 @@
   .owl-carousel.owl-drag .owl-item {
     -ms-touch-action: pan-y;
         touch-action: pan-y;
-    -webkit-farmer-select: none;
-    -moz-farmer-select: none;
-    -ms-farmer-select: none;
-    farmer-select: none; }
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
   .owl-carousel.owl-grab {
     cursor: move;
     cursor: grab; }

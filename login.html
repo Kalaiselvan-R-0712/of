@@ -199,12 +199,12 @@ body.loading{overflow-x:hidden;overflow-y:scroll}
 .heading{text-align:left;margin-bottom:31px}.heading .eyebrow{color:var(--cyan);font-size:9px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px}.heading h1{font-family:"Space Grotesk",Inter,sans-serif;font-size:clamp(42px,4.3vw,64px);line-height:1;letter-spacing:-3px;margin-bottom:14px}.heading p{color:#8197ab;font-size:14px;max-width:600px}
 .form-status{display:none;margin-bottom:14px;padding:10px 12px;border:1px solid rgba(25,220,255,.24);border-radius:12px;color:#a7c8dc;background:rgba(25,220,255,.055);text-align:center;font-size:11px}.form-status.show{display:block}
 
-/* ROLE — screenshot-style segmented control, values remain Admin/Farmer */
+/* ROLE — screenshot-style segmented control, values remain Admin/User */
 .input-group{margin-bottom:21px}.input-group:first-child>label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.input-group label{display:block;margin-bottom:9px;color:#dce8f2;font-size:10px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}
 .custom-select{position:relative;width:100%;height:68px;border:1px solid rgba(96,190,255,.18);border-radius:100px;padding:5px;background:rgba(7,17,31,.9);box-shadow:inset 0 0 0 1px rgba(255,255,255,.018)}
 .select-btn{display:none}.select-menu{position:static;width:100%;height:100%;display:flex!important;padding:0;border:0;border-radius:100px;background:transparent;box-shadow:none;z-index:auto;gap:4px}
 .option{width:50%;height:100%;display:flex;align-items:center;justify-content:center;gap:11px;padding:0 12px;border-radius:100px;color:#7890a8;font-size:12px;font-weight:800;letter-spacing:.6px;cursor:pointer;transition:.3s ease}
-.option:before{font-family:"Font Awesome 6 Free";font-weight:900;font-size:13px}.option[data-value="Farmer"]:before{content:"\f2bd"}.option[data-value="Admin"]:before{content:"\f508"}
+.option:before{font-family:"Font Awesome 6 Free";font-weight:900;font-size:13px}.option[data-value="User"]:before{content:"\f2bd"}.option[data-value="Admin"]:before{content:"\f508"}
 .option:hover{color:#fff;background:rgba(25,220,255,.07)}.option.selected{color:#001016;background:linear-gradient(100deg,var(--cyan),var(--blue) 55%,var(--violet));box-shadow:0 10px 30px rgba(25,220,255,.18)}
 .error{display:none;margin-top:6px;color:#ff9d9d;font-size:10px;font-weight:600}.error.show{display:block}
 
@@ -679,7 +679,7 @@ body {
 #preloader.preloader{align-items:center;cursor:default;display:flex;height:100%;justify-content:center;position:fixed;left:0;top:0;width:100%;z-index:9999999;background:#fff;overflow:hidden;}
 #preloader .animation-preloader{z-index:1000;position:relative;text-align:center;}
 #preloader .animation-preloader .spinner{animation:spinner 1s infinite linear;border-radius:50%;border:3px solid rgba(0,0,0,.2);border-top-color:#547A3D;height:9em;margin:0 auto 3.5em;width:9em;}
-#preloader .animation-preloader .txt-loading{font:700 5em "Manrope",Arial,sans-serif;text-align:center;farmer-select:none;letter-spacing:0;}
+#preloader .animation-preloader .txt-loading{font:700 5em "Manrope",Arial,sans-serif;text-align:center;user-select:none;letter-spacing:0;}
 #preloader .animation-preloader .txt-loading .letters-loading{color:#547A3D;position:relative;}
 #preloader .animation-preloader .txt-loading .letters-loading::before{animation:letters-loading 4s infinite;color:#16243E;content:attr(data-text-preloader);left:0;opacity:0;font-family:"Manrope",Arial,sans-serif;position:absolute;top:-3px;transform:rotateY(-90deg);}
 #preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before{animation-delay:.2s}
@@ -1349,7 +1349,7 @@ html body #customRole .select-menu { background:#fff !important; }
 #preloader.preloader{align-items:center;cursor:default;display:flex;height:100%;justify-content:center;position:fixed;left:0;top:0;width:100%;z-index:9999999;background:#fff;overflow:hidden;}
 #preloader .animation-preloader{z-index:1000;position:relative;text-align:center;}
 #preloader .animation-preloader .spinner{animation:spinner 1s infinite linear;border-radius:50%;border:3px solid rgba(0,0,0,.2);border-top-color:#547A3D;height:9em;margin:0 auto 3.5em;width:9em;}
-#preloader .animation-preloader .txt-loading{font:700 5em "Manrope",Arial,sans-serif;text-align:center;farmer-select:none;letter-spacing:0;}
+#preloader .animation-preloader .txt-loading{font:700 5em "Manrope",Arial,sans-serif;text-align:center;user-select:none;letter-spacing:0;}
 #preloader .animation-preloader .txt-loading .letters-loading{color:#547A3D;position:relative;}
 #preloader .animation-preloader .txt-loading .letters-loading::before{animation:letters-loading 4s infinite;color:#16243E;content:attr(data-text-preloader);left:0;opacity:0;font-family:"Manrope",Arial,sans-serif;position:absolute;top:-3px;transform:rotateY(-90deg);}
 #preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before{animation-delay:.2s}
@@ -1714,7 +1714,7 @@ html body .input-wrap textarea:focus{
   box-shadow:0 0 0 3px rgba(120,150,83,.13)!important;
 }
 html body .password-toggle:hover{color:#547a3d!important;background:rgba(120,150,83,.08)!important}
-/* Admin/Farmer and custom role selected states */
+/* Admin/User and custom role selected states */
 html body .role-option.selected,
 html body .role-option.active,
 html body .role-option[aria-pressed="true"],
@@ -1999,7 +1999,7 @@ html body button[type="submit"]{
 </div>
 <div class="select-menu" id="selectMenu">
 <div class="option" data-value="Admin"><span>ADMIN</span></div>
-<div class="option" data-value="Farmer"><span>FARMER</span></div>
+<div class="option" data-value="User"><span>USER</span></div>
 </div>
 <input id="role" type="hidden"/>
 </div>
@@ -2037,7 +2037,7 @@ html body button[type="submit"]{
 <strong>Demo Account Details</strong>
 <ul>
 <li>Admin: admin@stackly.com</li>
-<li>Farmer: farmer@stackly.com</li>
+<li>User: user@stackly.com</li>
 <li>Password: any valid strong password</li>
 </ul>
 </div>
@@ -2176,15 +2176,15 @@ loginForm.addEventListener("submit",function(e){
     if(!valid) return;
 
     /* SAVE LOGIN SESSION DATA */
-    localStorage.removeItem("farmerData");
+    localStorage.removeItem("userData");
 
-    const farmerData={
+    const userData={
         email:email.value.trim(),
         role:role.value.trim(),
         loginTime:new Date().toISOString()
     };
 
-    localStorage.setItem("farmerData",JSON.stringify(farmerData));
+    localStorage.setItem("userData",JSON.stringify(userData));
     localStorage.setItem("isLoggedIn","true");
 
     /* REMEMBER EMAIL ONLY */
