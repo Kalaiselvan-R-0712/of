@@ -2342,6 +2342,9 @@ html, body { width:100%; max-width:100%; overflow-x:clip !important; }
     if (target.closest("address, .address, [class*='address']")) return;
     if (target.matches("input, select, textarea, label")) return;
 
+    /* Back-to-top is a functional scroll control, not a 404 navigation item. */
+    if (target.closest("#back-to-top") || target.matches("#top, a.top[href^='#']")) return;
+
     event.preventDefault();
     event.stopPropagation();
     window.location.href = "404.html";
