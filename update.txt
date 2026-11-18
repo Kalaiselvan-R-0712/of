@@ -1,0 +1,37 @@
+STACKLY ORGANIC FARMING – WEBSITE UPDATE NOTES
+Date: 17 November 2026
+Source ZIP: New folder(20261117-051731).zip
+
+1. THREE 404 PAGES RESTYLED
+- 404.html, ae_404.html and fm_404.html have been converted from the old STACKLY Real Estate look to the STACKLY Organic Farming theme.
+- Updated palette to forest green (#10251a / #1e472b), harvest gold (#b78b3b), and warm cream (#f6f4e6).
+- Updated typography to Manrope + DM Sans, organic-farming imagery, logo, page copy and browser theme colour.
+- Preserved each page's role (general, admin and farmer not-found pages).
+- Added/retained both actions: Back to Previous Page and Back to Home. Previous-page action falls back to index.html when there is no usable history entry.
+- No AOS animations were added to the 404 pages, as requested.
+
+2. AOS ANIMATIONS ADDED TO ALL MAIN PAGES
+- Added AOS 2.3.4 stylesheet and script to: index.html, about.html, blog.html, contact.html, pages.html and portfolio.html.
+- Added varied AOS effects across main page sections and visual components: fade directions/diagonals, flip directions, zoom variants and slide directions.
+- Added staggered delays for repeated cards, smooth easing, one-time animation and reduced-motion preference handling.
+- AOS is excluded from all three 404 pages.
+
+3. DESKTOP HOVER INTERACTIONS
+- Added a shared desktop-only interaction layer for buttons, links, service/blog/portfolio/icon/image/team/client cards, images and form focus states.
+- Hover effects are limited to fine-pointer desktop devices at 1025px and above.
+- Hover transforms/filters are neutralized on tablet and mobile/touch devices.
+
+4. PRESERVATION
+- Existing main-page content, section order, core layout, project assets and existing scripts were retained; additions are layered onto the current pages.
+- AOS is loaded from the cdnjs CDN, so an internet connection is required for the AOS library itself. Existing page content remains available if the CDN is unreachable, but scroll animations will not initialize.
+
+Files modified:
+- 404.html
+- ae_404.html
+- fm_404.html
+- index.html
+- about.html
+- blog.html
+- contact.html
+- pages.html
+- portfolio.html

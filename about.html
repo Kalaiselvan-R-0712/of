@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly - Organic Farming</title>
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="image/favicon/favicon.webp">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="css/animations.min.css">
+
+    <!-- Owl slider -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!-- Magnafic Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+
+    <!-- Font Link -->
+    <link rel="stylesheet" href="font/flaticons_1/flaticon_agriculture.css">
+    <link rel="stylesheet" href="font/flaticons_2/flaticon_mycollection.css">
+    <link rel="stylesheet" href="font/ionicons/ionicons.min.css">
+    <link rel="stylesheet" href="font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="font/font-awesome/css/all.min.css">
+
+
+    <!-- AOS: scroll-triggered motion system -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style id="stackly-motion-and-hover-system">
+      @media (hover:hover) and (pointer:fine) and (min-width:1025px) {
+        body:not(.stackly-motion-ready) a, body:not(.stackly-motion-ready) button { transition: color .28s ease, background-color .28s ease, border-color .28s ease, box-shadow .28s ease, transform .28s ease; }
+        body.stackly-motion-ready a:not(.no-hover), body.stackly-motion-ready button:not(.no-hover), body.stackly-motion-ready .pq-button, body.stackly-motion-ready .pq-service-box, body.stackly-motion-ready .pq-blog-post, body.stackly-motion-ready .pq-portfolio-box, body.stackly-motion-ready .pq-icon-box, body.stackly-motion-ready .pq-image-box, body.stackly-motion-ready .pq-team-box, body.stackly-motion-ready .pq-client-box, body.stackly-motion-ready .stackly-header-inner img, body.stackly-motion-ready .pq-footer img { transition: transform .32s cubic-bezier(.2,.75,.25,1), box-shadow .32s ease, color .25s ease, background-color .25s ease, border-color .25s ease; }
+        body.stackly-motion-ready .pq-service-box:hover, body.stackly-motion-ready .pq-blog-post:hover, body.stackly-motion-ready .pq-portfolio-box:hover, body.stackly-motion-ready .pq-icon-box:hover, body.stackly-motion-ready .pq-image-box:hover, body.stackly-motion-ready .pq-team-box:hover, body.stackly-motion-ready .pq-client-box:hover { transform: translateY(-6px); box-shadow: 0 16px 38px rgba(16,37,26,.13); }
+        body.stackly-motion-ready a:hover, body.stackly-motion-ready button:hover, body.stackly-motion-ready .pq-button:hover { filter: brightness(1.045); }
+        body.stackly-motion-ready img:not(.no-hover):hover { filter: saturate(1.06); }
+        body.stackly-motion-ready .pq-button:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(16,37,26,.16); }
+        body.stackly-motion-ready input:focus, body.stackly-motion-ready textarea:focus, body.stackly-motion-ready select:focus { box-shadow: 0 0 0 4px rgba(183,139,59,.16); }
+      }
+      @media (hover:none), (pointer:coarse), (max-width:1024px) {
+        body.stackly-motion-ready a:hover, body.stackly-motion-ready button:hover, body.stackly-motion-ready img:hover, body.stackly-motion-ready .pq-service-box:hover, body.stackly-motion-ready .pq-blog-post:hover, body.stackly-motion-ready .pq-portfolio-box:hover, body.stackly-motion-ready .pq-icon-box:hover, body.stackly-motion-ready .pq-image-box:hover, body.stackly-motion-ready .pq-team-box:hover { transform:none !important; filter:none !important; box-shadow:inherit; }
+      }
+      [data-aos] { will-change: transform, opacity; }
+      @media (prefers-reduced-motion:reduce) { [data-aos], [data-aos] * { transition-duration:.01ms !important; animation-duration:.01ms !important; } }
+    </style>
+
+<style id="stackly-fullsite-premium-hover-effects">
+/* Desktop-only, fine-pointer hover system. Tablet/mobile remain touch-native. */
+@media (hover: hover) and (pointer: fine) and (min-width: 1025px) {
+  :root {
+    --stackly-hover-ease: cubic-bezier(.2,.75,.25,1);
+    --stackly-hover-shadow: 0 14px 34px rgba(16,37,26,.16);
+    --stackly-hover-gold: rgba(212,166,94,.28);
+  }
+
+  /* Every actionable control and navigation-sized detail */
+  a, button, [role="button"], input[type="button"], input[type="submit"],
+  .pq-button, .pq-list-item, .pq-tabs, .pq-social-icon,
+  .stackly-header-inner .navbar-nav > li > a,
+  .stackly-organic-footer a {
+    transition: color .28s var(--stackly-hover-ease),
+      background-color .28s var(--stackly-hover-ease),
+      border-color .28s var(--stackly-hover-ease),
+      box-shadow .28s var(--stackly-hover-ease),
+      transform .28s var(--stackly-hover-ease),
+      filter .28s var(--stackly-hover-ease);
+  }
+
+  a:not(.no-hover):hover,
+  button:not(.no-hover):hover,
+  [role="button"]:not(.no-hover):hover,
+  input[type="button"]:hover,
+  input[type="submit"]:hover {
+    filter: brightness(1.055);
+  }
+
+  .pq-button:hover,
+  a.pq-button:hover,
+  button.pq-button:hover {
+    transform: translateY(-4px) scale(1.025);
+    box-shadow: 0 13px 27px rgba(16,37,26,.2);
+  }
+
+  /* Image hover treatment: photographs, circular images, cards and thumbnails */
+  img:not(.no-hover):not([src*="logo"]):not([alt*="logo"]):not([class*="logo"]):not([class*="icon"]):not([class*="avatar"]) {
+    transition: transform .48s var(--stackly-hover-ease),
+      filter .42s ease, box-shadow .42s ease;
+    transform-origin: center;
+  }
+
+  img:not(.no-hover):not([src*="logo"]):not([alt*="logo"]):not([class*="logo"]):not([class*="icon"]):not([class*="avatar"]):hover {
+    transform: scale(1.045);
+    filter: saturate(1.13) contrast(1.035) brightness(1.025);
+    box-shadow: 0 13px 30px rgba(16,37,26,.19);
+  }
+
+  /* Make the full image frame respond when its image is hovered */
+  .pq-image-border, .pq-about-media, .pq-image-box,
+  .pq-portfolio-box, .pq-blog-post, .pq-team-box,
+  .pq-service-box, .pq-client-box, .pq-product,
+  .pq-product-box, .pq-gallery-item, .pq-project-item {
+    transition: transform .38s var(--stackly-hover-ease),
+      box-shadow .38s ease, border-color .32s ease;
+  }
+
+  .pq-image-border:hover, .pq-about-media:hover,
+  .pq-image-box:hover, .pq-portfolio-box:hover,
+  .pq-blog-post:hover, .pq-team-box:hover,
+  .pq-service-box:hover, .pq-client-box:hover,
+  .pq-product:hover, .pq-product-box:hover,
+  .pq-gallery-item:hover, .pq-project-item:hover {
+    box-shadow: var(--stackly-hover-shadow);
+  }
+
+  /* About Stackly: the large image, circular image, framed image and list */
+  .pq-about-media img:hover,
+  .pq-about-media .pq-image-border:hover img,
+  .pq-about-us-items img:hover {
+    transform: scale(1.055);
+  }
+
+  .pq-about-media .pq-image-4 {
+    transition: transform .48s var(--stackly-hover-ease),
+      filter .42s ease, box-shadow .42s ease;
+  }
+
+  .pq-about-media .pq-image-4:hover {
+    transform: scale(1.075) rotate(1.2deg);
+    box-shadow: 0 16px 34px rgba(16,37,26,.22);
+  }
+
+  .pq-list .pq-list-item {
+    position: relative;
+    transition: transform .28s var(--stackly-hover-ease),
+      color .28s ease, text-shadow .28s ease;
+    transform-origin: left center;
+    cursor: default;
+  }
+
+  .pq-list .pq-list-item:hover {
+    transform: translateX(8px);
+    color: #fff;
+    text-shadow: 0 4px 15px rgba(16,37,26,.18);
+  }
+
+  .pq-list .pq-list-item i,
+  .pq-list .pq-list-item svg {
+    display: inline-block;
+    transition: transform .3s var(--stackly-hover-ease),
+      color .3s ease, filter .3s ease;
+  }
+
+  .pq-list .pq-list-item:hover i,
+  .pq-list .pq-list-item:hover svg {
+    transform: translateX(5px) scale(1.16);
+    filter: drop-shadow(0 3px 5px rgba(16,37,26,.2));
+  }
+
+  /* Small icons, labels, badges, section markers and decorative details */
+  .pq-icon, .pq-service-icon, .pq-testimonial-icon,
+  .pq-section-title img, .pq-title-sub-title img,
+  .pq-icon-box .pq-icon i, .pq-social-icon,
+  .pq-contact-box i, .stackly-contact-icon,
+  .pq-list-item i, .pq-tabs i {
+    transition: transform .32s var(--stackly-hover-ease),
+      color .28s ease, filter .32s ease;
+  }
+
+  .pq-icon:hover, .pq-service-icon:hover,
+  .pq-testimonial-icon:hover, .pq-section-title img:hover,
+  .pq-title-sub-title img:hover, .pq-icon-box .pq-icon:hover i,
+  .pq-social-icon:hover, .pq-contact-box i:hover,
+  .stackly-contact-icon:hover, .pq-tabs:hover i {
+    transform: translateY(-3px) scale(1.12);
+    filter: drop-shadow(0 5px 8px rgba(16,37,26,.2));
+  }
+
+  /* Card headings and small text links */
+  .pq-service-box:hover .pq-service-box-title,
+  .pq-icon-box:hover .pq-icon-text,
+  .pq-blog-post:hover .pq-blog-title,
+  .pq-portfolio-box:hover .pq-portfolio-title,
+  .pq-image-box:hover h4,
+  .pq-team-box:hover h4 {
+    color: #b78b3b;
+    transition: color .28s ease;
+  }
+
+  .pq-service-box:hover, .pq-icon-box:hover,
+  .pq-blog-post:hover, .pq-portfolio-box:hover,
+  .pq-team-box:hover, .pq-client-box:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--stackly-hover-shadow);
+  }
+
+  /* Header/footer micro-interactions, without changing their destinations */
+  .stackly-header-inner img:hover,
+  .stackly-organic-footer img:hover {
+    transform: scale(1.035);
+  }
+
+  /* Respect explicitly disabled hover elements */
+  .no-hover, .no-hover:hover,
+  .no-hover img, .no-hover img:hover {
+    transform: none !important;
+    filter: none !important;
+    box-shadow: none !important;
+  }
+}
+
+@media (hover: none), (pointer: coarse), (max-width: 1024px) {
+  #stackly-fullsite-premium-hover-effects { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #stackly-fullsite-premium-hover-effects ~ * { scroll-behavior: auto; }
+}
+</style>
+
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+<style id="stackly-contact-details-hover">
+@media (hover:hover) and (pointer:fine) and (min-width:1025px) {
+  .stackly-footer-contact-row > span:first-child {
+    display: inline-flex;
+    align-items: center;
+    transition: transform .3s cubic-bezier(.2,.75,.25,1), color .3s ease, text-shadow .3s ease;
+    cursor: default;
+  }
+  .stackly-footer-contact-row > span:first-child:hover {
+    transform: translateX(4px);
+    color: #d4a65e;
+    text-shadow: 0 4px 14px rgba(212,166,94,.18);
+  }
+  .stackly-footer-contact-row > a {
+    transition: transform .3s cubic-bezier(.2,.75,.25,1), color .3s ease, filter .3s ease;
+  }
+  .stackly-footer-contact-row > a:hover {
+    transform: translateX(4px);
+    color: #d4a65e;
+    filter: brightness(1.06);
+  }
+  .stackly-footer-contact-row .stackly-contact-icon {
+    transition: transform .3s cubic-bezier(.2,.75,.25,1), filter .3s ease;
+  }
+  .stackly-footer-contact-row > span:first-child:hover .stackly-contact-icon,
+  .stackly-footer-contact-row > a:hover .stackly-contact-icon {
+    transform: translateY(-2px) scale(1.1);
+    filter: drop-shadow(0 4px 7px rgba(212,166,94,.25));
+  }
+}
+@media (hover:none), (pointer:coarse), (max-width:1024px) {
+  .stackly-footer-contact-row > span:first-child,
+  .stackly-footer-contact-row > a { transform:none; }
+}
+</style>
+
+
+<style id="stackly-desktop-counter-testimonial-hover">
+/* Extra hover treatment for statistic counters and testimonial cards.
+   Intentionally restricted to desktop/laptop fine-pointer devices. */
+@media (hover: hover) and (pointer: fine) and (min-width: 1025px) {
+  .pq-counter,
+  .pq-counter.pq-counter-style-1 {
+    position: relative;
+    transition: transform .38s cubic-bezier(.2,.75,.25,1),
+                box-shadow .38s ease,
+                border-color .32s ease,
+                background-color .32s ease;
+  }
+
+  .pq-counter.pq-counter-style-1:hover {
+    transform: translateY(-6px);
+    border-top-color: #d4a65e;
+    border-bottom-color: #d4a65e;
+    box-shadow: 0 12px 28px rgba(16,37,26,.10);
+  }
+
+  .pq-counter .pq-counter-icon {
+    transition: transform .38s cubic-bezier(.2,.75,.25,1),
+                color .3s ease,
+                filter .3s ease;
+  }
+
+  .pq-counter:hover .pq-counter-icon {
+    transform: translateY(-4px) scale(1.12);
+    color: #d4a65e;
+    filter: drop-shadow(0 5px 8px rgba(212,166,94,.25));
+  }
+
+  .pq-counter .pq-counter-num-prefix,
+  .pq-counter .pq-counter-description {
+    transition: color .3s ease, transform .3s ease;
+  }
+
+  .pq-counter:hover .pq-counter-num-prefix {
+    transform: translateY(-2px);
+  }
+
+  .pq-counter:hover .pq-counter-description {
+    color: #b78b3b;
+  }
+
+  .pq-testimonial-box {
+    transition: transform .42s cubic-bezier(.2,.75,.25,1),
+                box-shadow .42s ease,
+                border-color .35s ease,
+                background-color .35s ease;
+    will-change: transform;
+  }
+
+  .pq-testimonial-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 42px rgba(16,37,26,.16);
+  }
+
+  .pq-testimonial-box .pq-testimonial-star i {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(.2,.75,.25,1),
+                filter .3s ease;
+  }
+
+  .pq-testimonial-box:hover .pq-testimonial-star i {
+    transform: translateY(-3px) scale(1.12);
+    filter: drop-shadow(0 3px 5px rgba(255,209,45,.35));
+  }
+
+  .pq-testimonial-box .pq-testimonial-img img {
+    transition: transform .42s cubic-bezier(.2,.75,.25,1),
+                box-shadow .42s ease,
+                filter .35s ease;
+  }
+
+  .pq-testimonial-box:hover .pq-testimonial-img img {
+    transform: scale(1.09);
+    box-shadow: 0 8px 18px rgba(16,37,26,.2);
+    filter: saturate(1.12);
+  }
+
+  .pq-testimonial-box .pq-testimonial-meta,
+  .pq-testimonial-box .pq-testimonial-description {
+    transition: transform .32s ease, color .32s ease;
+  }
+
+  .pq-testimonial-box:hover .pq-testimonial-meta {
+    transform: translateX(3px);
+  }
+}
+
+@media (hover: none), (pointer: coarse), (max-width: 1024px) {
+  .pq-counter,
+  .pq-counter.pq-counter-style-1,
+  .pq-testimonial-box {
+    transform: none;
+    box-shadow: inherit;
+  }
+}
+</style>
+
+
+<style id="stackly-responsive-navigation-footer-fix">
+/* Responsive header, navigation and footer refinements */
+#pq-header.stackly-organic-header{z-index:1050}
+#pq-header.stackly-organic-header .stackly-header-inner{box-sizing:border-box}
+.stackly-header-brand img{height:auto}
+.stackly-mobile-actions{display:none}
+.stackly-nav-toggle{width:46px;height:46px;align-items:center;justify-content:center;flex-direction:column;gap:5px;cursor:pointer;position:relative;z-index:1060}
+.stackly-nav-toggle span{width:26px;height:2px;margin:0;display:block;transition:transform .25s ease,opacity .2s ease}
+.stackly-nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.stackly-nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.stackly-nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (max-width: 991px){
+  body{overflow-x:hidden}
+  #pq-header.stackly-organic-header{position:fixed!important;top:0;left:0;right:0;width:100%;background:#fff;box-shadow:0 5px 24px rgba(24,55,30,.10)}
+  body.stackly-mobile-nav-ready{padding-top:82px}
+  #pq-header.stackly-organic-header .stackly-header-inner{width:100%;min-height:82px;padding:8px 22px;display:flex;flex-wrap:nowrap;justify-content:space-between;gap:12px}
+  .stackly-header-brand{order:1;margin:0}
+  .stackly-header-brand img{width:clamp(135px,24vw,180px);max-height:62px}
+  .stackly-nav-toggle{display:flex!important;order:2;margin:0 0 0 auto;flex:0 0 46px;padding:8px!important}
+  .stackly-login-register{display:none!important}
+  #pq-header.stackly-organic-header .stackly-main-nav,
+  #pq-header.stackly-organic-header .stackly-main-nav.collapse{display:none!important;position:absolute;top:100%;left:0;right:0;width:100%;max-height:calc(100vh - 82px);overflow-y:auto;overscroll-behavior:contain;background:#fff;padding:12px 20px 24px;box-shadow:0 14px 22px rgba(15,40,22,.14);border-top:1px solid rgba(30,71,43,.08)}
+  #pq-header.stackly-organic-header .stackly-main-nav.stackly-nav-open{display:block!important}
+  .stackly-main-nav ul{display:flex!important;flex-direction:column;align-items:center!important;justify-content:center;gap:0;width:100%;margin:0;padding:0;list-style:none}
+  .stackly-main-nav ul li{width:100%;margin:0!important;text-align:center}
+  .stackly-main-nav ul li a{display:block;width:100%;padding:13px 10px!important;text-align:center;border-bottom:1px solid rgba(30,71,43,.09);font-size:16px}
+  .stackly-mobile-actions{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;width:100%;padding:20px 0 4px}
+  .stackly-mobile-actions a{display:flex;align-items:center;justify-content:center;width:min(260px,90%);min-height:44px;padding:10px 18px;border-radius:4px;background:#1e472b;color:#fff!important;text-decoration:none;font-size:15px;font-weight:700;text-align:center}
+  .stackly-mobile-actions a:nth-child(2){background:#b78b3b;color:#10251a!important}
+  .stackly-mobile-actions a:nth-child(3){background:#10251a}
+  body.stackly-nav-locked{overflow:hidden!important;touch-action:none}
+  .stackly-footer-main,.stackly-footer-bottom{width:calc(100% - 40px)}
+  .stackly-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));text-align:center;justify-items:center}
+  .stackly-footer-grid>div{width:100%;text-align:center}
+  .stackly-footer-brand{justify-content:center}
+  .stackly-footer-brand img{object-position:center}
+  .stackly-footer-grid h3:after{left:50%;transform:translateX(-50%)}
+  .stackly-footer-links ul,.stackly-footer-focus ul{display:flex;flex-direction:column;align-items:center}
+  .stackly-footer-social{justify-content:center}
+  .stackly-footer-contact-row{grid-template-columns:1fr;text-align:center}
+  .stackly-footer-contact-row>a,.stackly-footer-contact-row>a:first-child{justify-content:center;padding:14px 8px}
+  .stackly-footer-contact-row>a+a{border-left:0;border-top:1px solid rgba(220,232,220,.18)}
+  .stackly-footer-bottom{flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px 0}
+  .stackly-footer-legal{justify-content:center;flex-wrap:wrap}
+}
+@media(max-width:575px){
+  body.stackly-mobile-nav-ready{padding-top:72px}
+  #pq-header.stackly-organic-header .stackly-header-inner{width:100%;min-height:72px;padding:6px 15px}
+  .stackly-header-brand img{width:138px;max-height:56px}
+  .stackly-nav-toggle{width:42px;height:42px;flex-basis:42px}
+  #pq-header.stackly-organic-header .stackly-main-nav,
+  #pq-header.stackly-organic-header .stackly-main-nav.collapse{max-height:calc(100vh - 72px)}
+  .stackly-footer-main,.stackly-footer-bottom{width:calc(100% - 32px)}
+  .stackly-footer-main{padding:42px 0 24px}
+  .stackly-footer-grid{grid-template-columns:minmax(0,1fr);gap:28px}
+  .stackly-footer-about p,.stackly-footer-connect p{max-width:440px;margin-left:auto;margin-right:auto}
+  .stackly-footer-grid h3{margin-bottom:22px}
+  .stackly-footer-legal{gap:14px}
+}
+@media(min-width:992px) and (max-width:1199px){
+  #pq-header.stackly-organic-header .stackly-header-inner{width:calc(100% - 36px);gap:16px}
+  .stackly-header-brand img{width:175px}
+  .stackly-main-nav ul{gap:clamp(12px,1.5vw,20px)}
+  .stackly-main-nav ul li a{font-size:14px}
+  .stackly-login-register{padding:0 16px;font-size:14px}
+  .stackly-footer-grid{gap:26px}
+}
+@media(max-width:767px){
+  img,video,iframe{max-width:100%}
+  .container,.container-fluid{max-width:100%}
+  .row{margin-left:0;margin-right:0}
+  .stackly-footer-contact-row>a{min-width:0;overflow-wrap:anywhere}
+}
+</style>
+
+
+<style id="stackly-no-horizontal-overflow-fix">
+/* Final mobile/tablet viewport containment */
+html, body { width:100%; max-width:100%; overflow-x:clip !important; }
+@supports not (overflow:clip) { html, body { overflow-x:hidden !important; } }
+*, *::before, *::after { box-sizing:border-box; }
+@media (max-width:991px) {
+ html, body { min-width:0 !important; } body { position:relative; }
+ #pq-header, main, footer, section, .pq-footer, .stackly-organic-footer, .stackly-footer-main, .stackly-footer-bottom { max-width:100% !important; }
+ section { width:100%; }
+ .container, .container-fluid { width:calc(100% - 30px) !important; max-width:100% !important; padding-left:0 !important; padding-right:0 !important; margin-left:auto !important; margin-right:auto !important; }
+ .row { max-width:100%; margin-left:0 !important; margin-right:0 !important; }
+ .row > [class*="col-"] { min-width:0; max-width:100%; }
+ img, video, iframe, svg, canvas { max-width:100% !important; }
+ .pq-breadcrumb-style-1 { width:100% !important; max-width:100% !important; background-size:cover !important; background-position:center center !important; }
+ .pq-breadcrumb, .pq-breadcrumb .container, .pq-breadcrumb-title { max-width:100%; min-width:0; overflow-wrap:anywhere; }
+ .stackly-header-inner, .stackly-main-nav, .stackly-footer-grid, .stackly-footer-contact-row { min-width:0 !important; max-width:100% !important; }
+ .stackly-header-inner { overflow:visible; }
+ .stackly-footer-grid > *, .stackly-footer-contact-row > * { min-width:0; max-width:100%; }
+ .stackly-footer-grid p, .stackly-footer-grid a, .stackly-footer-contact-row a { overflow-wrap:anywhere; word-break:break-word; }
+ .stackly-main-nav ul, .stackly-main-nav li { min-width:0; max-width:100%; }
+}
+@media (max-width:575px) {
+ .container, .container-fluid { width:calc(100% - 30px) !important; }
+ .pq-breadcrumb-style-1 { padding:88px 0 !important; }
+ .pq-breadcrumb .pq-breadcrumb-title { font-size:clamp(28px, 8vw, 36px) !important; line-height:1.15 !important; text-align:center; }
+ .stackly-header-inner { width:100% !important; padding-left:15px !important; padding-right:15px !important; }
+ .stackly-header-brand { min-width:0; } .stackly-header-brand img { max-width:142px !important; }
+ .stackly-footer-main, .stackly-footer-bottom { width:calc(100% - 30px) !important; }
+}
+</style>
+
+
+<style id="stackly-full-height-mobile-menu-overlay">
+/* When the mobile menu is open, its white panel fills all space below
+   the fixed header through the bottom edge of the viewport. */
+@media (max-width: 991px) {
+  #pq-header.stackly-organic-header { position:fixed!important; top:0!important; left:0!important; right:0!important; z-index:1050!important; }
+  #pq-header.stackly-organic-header .stackly-main-nav,
+  #pq-header.stackly-organic-header .stackly-main-nav.collapse,
+  #pq-header.stackly-organic-header .stackly-main-nav.stackly-nav-open {
+    position:fixed!important;
+    top:82px!important;
+    bottom:0!important;
+    left:0!important;
+    right:0!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:calc(100vh - 82px)!important;
+    max-height:none!important;
+    overflow-y:auto!important;
+    overflow-x:hidden!important;
+    overscroll-behavior:contain!important;
+    background:#fff!important;
+    padding:12px 20px max(24px, env(safe-area-inset-bottom))!important;
+    box-shadow:none!important;
+    z-index:1049!important;
+  }
+  #pq-header.stackly-organic-header .stackly-main-nav:not(.stackly-nav-open) {
+    display:none!important;
+  }
+  #pq-header.stackly-organic-header .stackly-main-nav.stackly-nav-open {
+    display:block!important;
+  }
+}
+@media (max-width:575px) {
+  #pq-header.stackly-organic-header .stackly-main-nav,
+  #pq-header.stackly-organic-header .stackly-main-nav.collapse,
+  #pq-header.stackly-organic-header .stackly-main-nav.stackly-nav-open {
+    top:72px!important;
+    min-height:calc(100vh - 72px)!important;
+  }
+}
+@supports (height: 100dvh) {
+  @media (max-width:991px) {
+    #pq-header.stackly-organic-header .stackly-main-nav,
+    #pq-header.stackly-organic-header .stackly-main-nav.collapse,
+    #pq-header.stackly-organic-header .stackly-main-nav.stackly-nav-open {
+      min-height:calc(100dvh - 82px)!important;
+    }
+  }
+  @media (max-width:575px) {
+    #pq-header.stackly-organic-header .stackly-main-nav,
+    #pq-header.stackly-organic-header .stackly-main-nav.collapse,
+    #pq-header.stackly-organic-header .stackly-main-nav.stackly-nav-open {
+      min-height:calc(100dvh - 72px)!important;
+    }
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+    <!-- loading -->
+    <div id="pq-loading">
+        <div id="pq-loading-center">
+            <img src="image/logo/logo-1.webp" alt="loading">
+        </div>
+    </div>
+
+    <!-- Header -->
+    <!-- Stackly Organic Farming Header -->
+<header id="pq-header" class="pq-header-style-1 pq-has-sticky stackly-organic-header">
+  <div class="stackly-header-inner">
+    <div class="stackly-header-brand">
+      <a href="index.html" aria-label="Stackly home"><img src="image/logo/logo-1.webp" alt="Stackly"></a>
+    </div>
+    <button class="stackly-nav-toggle navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="stackly-main-nav collapse navbar-collapse" id="navbarNavDropdown" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="pages.html">Pages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="stackly-mobile-actions" aria-label="Account navigation">
+        <a href="login.html">Login / Register</a>
+      </div>
+    </nav>
+    <a class="stackly-login-register" href="login.html">Login / Register</a>
+  </div>
+</header>
+
+    <!-- Breadcrumb -->
+    <section class="pq-breadcrumb-style-1">
+        <div class="container">
+            <div class="pq-breadcrumb">
+                <h1 class="pq-breadcrumb-title">About us</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- About us -->
+    <section class="our-about overflow-hidden">
+        <div class="container">
+            <div class="row flex-column-reverse flex-xl-row">
+                <div class="col-xl-6 pe-xl-4 mt-5 mt-xl-0 wow fadeInUp">
+                    <div class="pq-about-media">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="pq-image-border pq-ms-15">
+                                    <img class="pq-image-1" src="image/about/about-us-img-1.webp" alt="about-image">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <img class="pq-image-2" src="image/about/about-us-img-2.webp" alt="about-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="pq-1-bg-image" src="image/service/services-bottom-image.webp" alt="service-image">
+                <div class="col-xl-6 ps-xl-5 wow fadeInRight">
+                    <div class="pq-section-title pe-lg-5 mb-0">
+                        <div class="pq-title">
+                            <div class="pq-title-sub-title">
+                                <img src="image/section-image/group_1727.webp" alt="image">
+                                <span>Our About</span>
+                            </div>
+                            <h5 class="pq-title-hadding">We’re Leader In Agriculture <span>Market</span></h5>
+                            <p class="pq-title-description">Our farm is shaping the future by cultivating crops without
+                                harmful
+                                chemicals, supporting both health and the environment. we proud to be at the forefront
+                                of this movement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul class="pq-list">
+                        <li class="pq-list-item">
+                            <i aria-hidden="true" class=" flaticon-next"></i>
+                            <span class="pq-list-description">Trusted Gardening Partners</span>
+                        </li>
+
+                        <li class="pq-list-item">
+                            <i aria-hidden="true" class=" flaticon-next"></i>
+                            <span class="pq-list-description">Award Winning Company</span>
+                        </li>
+
+                        <li class="pq-list-item">
+                            <i aria-hidden="true" class=" flaticon-next"></i>
+                            <span class="pq-list-description">Shipping Cost Low</span>
+                        </li>
+
+                        <li class="pq-list-item">
+                            <i aria-hidden="true" class=" flaticon-next"></i>
+                            <span class="pq-list-description">Crop Production</span>
+                        </li>
+
+                        <li class="pq-list-item">
+                            <i aria-hidden="true" class=" flaticon-next"></i>
+                            <span class="pq-list-description">Organic Farming Support</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <img class="pq-2-bg-image pq-left" src="image/service/about-bottom-image-1.webp" alt="service-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- cinet -->
+    <section class="clinet pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pq-client-box-slider pq-style-2">
+                        <div class="pq-clint-box-border">
+                            <h3 class="pq-client-box-title">We Workrd With Global Latest Brands</h3>
+                        </div>
+                        <div class="owl-carousel owl-loaded owl-drag" data-dots="false" data-nav="false"
+                            data-desk_num="5" data-lap_num="2" data-tab_num="2" data-mob_num="2" data-mob_sm="1"
+                            data-autoplay="false" data-loop="true" data-margin="30">
+                            <div class="item">
+                                <div class="pq-client-box pq-style-2">
+                                    <a href="#">
+                                        <img src="image/client-box/style-2/1-2.webp" alt="client-image">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="pq-client-box pq-style-2">
+                                    <a href="#">
+                                        <img src="image/client-box/style-2/2.webp" alt="client-image">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="pq-client-box pq-style-2">
+                                    <a href="#">
+                                        <img src="image/client-box/style-2/3.webp" alt="client-image">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="pq-client-box pq-style-2">
+                                    <a href="#">
+                                        <img src="image/client-box/style-2/6.webp" alt="client-image">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="pq-client-box pq-style-2">
+                                    <a href="#">
+                                        <img src="image/client-box/style-2/7.webp" alt="client-image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- appointment -->
+    <section class="appointment pq-bg-3-image pq-py-90 pq-bg-expand">
+        <div class="container">
+            <div class="pq-icon-box-item">
+                <div class="pq-icon-box pq-style-5">
+                    <div class="pq-ixon-box-logo wow zoomIn">
+                        <div class="pq-icon-box-icon">
+                            <i aria-hidden="true" class=" flaticon-planting-1"></i>
+                        </div>
+                    </div>
+
+                    <div class="pq-icon-box-content wow zoomIn">
+                        <h3 class="pq-icon-box-title">We’re popular leader in agriculture market globally</h3>
+                    </div>
+                </div>
+                <div class="pq-btn-container mt-4 wow zoomIn">
+                    <a href="about.html" class="pq-button pq-button-flat">
+                        <span class="pq-button-text">discover more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ <!-- image-section -->
+    <section class="image-box gallery pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="pq-section-title text-start pe-2 wow fadeInRight">
+                        <div class="pq-title">
+                            <div class="pq-title-sub-title">
+                                <img src="image/section-image/group_1727.webp" alt="image">
+                                <span>Our Projects</span>
+                            </div>
+                            <h5 class="pq-title-hadding">We're providing high the quality <span>products</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="pq-image-box-item wow fadeInRight">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="pq-image-box pq-style-1">
+                                    <a href="image/image-box/Project-image-8.webp">
+                                        <img src="image/image-box/Project-image-8.webp" alt="image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <div class="pq-image-box pq-style-1">
+                                    <a href="image/image-box/Project-image-6.webp">
+                                        <img src="image/image-box/Project-image-6.webp" alt="image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mt-lg-5 mt-4">
+                <div class="col-lg-7">
+                    <div class="pq-image-box-item wow fadeInRight">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="pq-image-box pq-style-1">
+                                    <a href="image/image-box/Project-image-7.webp">
+                                        <img src="image/image-box/Project-image-7.webp" alt="image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <div class="pq-image-box pq-style-1">
+                                    <a href="image/image-box/Project-image-2-1.webp">
+                                        <div class="pq-image-border">
+                                            <img class="pq-image-1" src="image/image-box/Project-image-2-1.webp"
+                                                alt="image">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 mt-4 mt-lg-0 pq-moving-start">
+                    <div class="pq-popup-animation pq-style-1 pq-moving-button wow fadeInRight">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=XHOmBV4js_E">
+                            <div class="pq-popup-inner">
+                                <div class="pq-popup-content">
+                                    <i class=" ti-arrow-top-right"></i>
+                                </div>
+                                <img src="image/popup/popup-animation.webp" alt="pop-image">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter -->
+    <section class="counter overflow-hidden pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 pe-lg-5">
+                    <div class="pq-counter pq-counter-style-1 wow fadeInUp">
+                        <div class="pq-counter-info">
+                            <div class="pq-counter-num-prefix">
+                                <h5 class="pq-count timer" data-count="70" data-pq-duration="2000">70</h5>
+                                <span class="pq-counter-prefix">%</span>
+
+                            </div>
+                            <p class="pq-counter-description">Agricultural Consulting</p>
+                        </div>
+
+                        <div class="pq-counter-icon">
+                            <i class=" flaticon-land"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5 mt-md-0 pe-lg-5">
+                    <div class="pq-counter pq-counter-style-1 wow fadeInUp">
+                        <div class="pq-counter-info">
+                            <div class="pq-counter-num-prefix">
+                                <h5 class="pq-count timer" data-count="30" data-pq-duration="2000">30</h5>
+                                <span class="pq-counter-prefix">%</span>
+
+                            </div>
+                            <p class="pq-counter-description">Agricultural Consulting</p>
+                        </div>
+
+                        <div class="pq-counter-icon">
+                            <i class=" flaticon-corn"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-12 mt-5 mt-lg-0 pe-lg-5">
+                    <div class="pq-counter pq-counter-style-1 wow fadeInUp">
+                        <div class="pq-counter-info">
+                            <div class="pq-counter-num-prefix">
+                                <h5 class="pq-count timer" data-count="50" data-pq-duration="2000">50</h5>
+                                <span class="pq-counter-prefix">%</span>
+
+                            </div>
+                            <p class="pq-counter-description">Agricultural Consulting</p>
+                        </div>
+
+                        <div class="pq-counter-icon">
+                            <i class=" flaticon-planting"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+                <img class="pq-4-bg-image" src="image/background-image/project-bottom-image.webp" alt="image">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial pq-bg-primary overflow-hidden pq-bg-expand">
+        <div class="container">
+            <div class="row">
+                <div class="pq-section-title text-center wow fadeInUp">
+                    <div class="pq-title">
+                        <div class="pq-title-sub-title justify-content-center">
+                            <img src="image/section-image/group_14610462.webp" alt="image">
+                            <span>Client Testimonials</span>
+                        </div>
+                        <h5 class="pq-title-hadding">What Farmers Are Saying <span>About Agrite</span></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pq-testimonial-box-slider pq-style-1 wow fadeInUp">
+                <div class="owl-carousel" data-dots="false" data-nav="true" data-desk_num="3" data-lap_num="3"
+                    data-tab_num="2" data-mob_num="1" data-mob_sm="1" data-autoplay="false" data-loop="true"
+                    data-center="true" data-margin="60">
+                    <div class="item">
+                        <div class="pq-testimonial-box pq-style-1 text-left">
+                            <div class="pq-testimonial-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="pq-testimonial-description">Stackly has transformed the way my family and I eat.
+                                The produce is
+                                incredibly fresh, and knowing it’s organic gives us peace of mind. Their CSA program is
+                                the best!</p>
+                            <div class="pq-testimonial-info">
+                                <div class="pq-testimonial-media">
+                                    <div class="pq-testimonial-img">
+                                        <img decoding="async"
+                                            src="image/testimonial-box/style-1/testimonial-img-1-1.webp"
+                                            alt="testimonial-img">
+                                    </div>
+                                </div>
+                                <div class="pq-testimonial-meta">
+                                    <h5 class="pq-testmonial-title">John Down</h5>
+                                    <span>Corn Farmer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="pq-testimonial-box pq-style-1 text-left">
+                            <div class="pq-testimonial-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="pq-testimonial-description">Stackly has transformed the way my family and I eat.
+                                The produce is
+                                incredibly fresh, and knowing it’s organic gives us peace of mind. Their CSA program is
+                                the best!</p>
+                            <div class="pq-testimonial-info">
+                                <div class="pq-testimonial-media">
+                                    <div class="pq-testimonial-img">
+                                        <img decoding="async" src="image/testimonial-box/style-1/testimonial-img-2.webp"
+                                            alt="testimonial-img">
+                                    </div>
+                                </div>
+                                <div class="pq-testimonial-meta">
+                                    <h5 class="pq-testmonial-title">Maria Suahk</h5>
+                                    <span>PHYSICAL THERAPIST</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="pq-testimonial-box pq-style-1 text-left">
+                            <div class="pq-testimonial-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="pq-testimonial-description">Stackly has transformed the way my family and I eat.
+                                The produce is
+                                incredibly fresh, and knowing it’s organic gives us peace of mind. Their CSA program is
+                                the best!</p>
+                            <div class="pq-testimonial-info">
+                                <div class="pq-testimonial-media">
+                                    <div class="pq-testimonial-img">
+                                        <img decoding="async" src="image/testimonial-box/style-1/testimonial-img-3.webp"
+                                            alt="testimonial-img">
+                                    </div>
+                                </div>
+                                <div class="pq-testimonial-meta">
+                                    <h5 class="pq-testmonial-title">Carlos Mrak</h5>
+                                    <span>Rice Farmer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="pq-testimonial-box pq-style-1 text-left">
+                            <div class="pq-testimonial-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="pq-testimonial-description">Stackly has transformed the way my family and I eat.
+                                The produce is
+                                incredibly fresh, and knowing it’s organic gives us peace of mind. Their CSA program is
+                                the best!</p>
+                            <div class="pq-testimonial-info">
+                                <div class="pq-testimonial-media">
+                                    <div class="pq-testimonial-img">
+                                        <img decoding="async" src="image/testimonial-box/style-1/testimonial-img-4.webp"
+                                            alt="testimonial-img">
+                                    </div>
+                                </div>
+                                <div class="pq-testimonial-meta">
+                                    <h5 class="pq-testmonial-title">Sarah Bala</h5>
+                                    <span>Wheat Farmer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="pq-testimonial-box pq-style-1 text-left">
+                            <div class="pq-testimonial-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="pq-testimonial-description">Stackly has transformed the way my family and I eat.
+                                The produce is
+                                incredibly fresh, and knowing it’s organic gives us peace of mind. Their CSA program is
+                                the best!</p>
+                            <div class="pq-testimonial-info">
+                                <div class="pq-testimonial-media">
+                                    <div class="pq-testimonial-img">
+                                        <img decoding="async" src="image/testimonial-box/style-1/testimonial-img-5.webp"
+                                            alt="testimonial-img">
+                                    </div>
+                                </div>
+                                <div class="pq-testimonial-meta">
+                                    <h5 class="pq-testmonial-title">John Emily</h5>
+                                    <span>Citrus Grower</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <!-- Stackly Organic Farming Footer -->
+<!-- Stackly Organic Farming Footer -->
+<footer id="pq-footer" class="stackly-organic-footer">
+  <div class="stackly-footer-main">
+    <div class="stackly-footer-grid">
+      <div class="stackly-footer-about">
+        <a class="stackly-footer-brand" href="index.html"><img src="image/logo/logo2.webp" alt="Stackly"></a>
+        <p>Discover the goodness of organic farming with Stackly. We share sustainable growing practices, natural solutions and fresh ideas to help cultivate a healthier tomorrow.</p>
+        <div class="stackly-footer-social" aria-label="Social links">
+          <a href="mailto:support@stackly.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/" aria-label="X"><svg class="stackly-x-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.9 2h3.1l-6.78 7.75L23.2 22h-6.25l-4.9-7.42L5.56 22H2.4l7.25-8.29L1.9 2h6.4l4.43 6.77L18.9 2zm-1.1 18h1.73L7.36 3.9H5.5L17.8 20z"/></svg></a>
+          <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="stackly-footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="pages.html">Pages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="stackly-footer-focus">
+        <h3>Organic Farming</h3>
+        <ul>
+          <li><a href="404.html">Our Approach</a></li>
+          <li><a href="404.html">Farming Projects</a></li>
+          <li><a href="404.html">Farming Insights</a></li>
+          <li><a href="404.html">Organic Gallery</a></li>
+          <li><a href="404.html">Get Support</a></li>
+        </ul>
+      </div>
+      <div class="stackly-footer-connect">
+        <h3>Stay Connected</h3>
+        <p>Receive organic farming updates, seasonal tips and the latest news from Stackly.</p>
+        <form class="stackly-newsletter" action="#" method="post">
+          <label class="visually-hidden" for="stackly-footer-email">Email ID</label>
+          <input id="stackly-footer-email" type="email" name="email" placeholder="Email ID" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="stackly-footer-contact-row">
+      <span><span class="stackly-contact-icon"><i class="fas fa-map-marker-alt"></i></span><span>MMR Complex, Salem, TN, India</span></span>
+      <a href="mailto:support@stackly.com"><span class="stackly-contact-icon"><i class="fas fa-envelope"></i></span><span>support@stackly.com</span></a>
+      <a href="tel:+917010792750"><span class="stackly-contact-icon"><i class="fas fa-phone-alt"></i></span><span>+91-7010792750</span></a>
+    </div>
+  </div>
+  <div class="stackly-footer-bottom">
+    <div><span>© 2026 STACKLY. All Rights Reserved.</span></div>
+    <div class="stackly-footer-legal"><a href="404.html">Privacy Policy</a><a href="404.html">Terms &amp; Conditions</a></div>
+  </div>
+</footer>
+    <!-- back-to-top -->
+    <div id="back-to-top">
+        <a class="top" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+    </div>
+
+    <!-- jquery js -->
+    <script src="js/jquery-3.7.1.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- gsap js -->
+    <script src="js/gsap.min.js"></script>
+
+    <!-- scrolltrigger js -->
+    <script src="js/ScrollTrigger.min.js"></script>
+
+    <!-- Magnafic Popup js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- Owl js -->
+    <script src="js/owl.carousel.js"></script>
+
+    <!-- isotope js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <!-- load more js -->
+    <script src="js/load-more.js"></script>
+
+    <!-- WOW -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+<script>
+(function () {
+  var current = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
+  document.querySelectorAll(".stackly-main-nav a[href]").forEach(function (link) {
+    var target = (link.getAttribute("href").split("?")[0].split("#")[0] || "").toLowerCase();
+    if (target === current) {
+      link.classList.add("is-current");
+      link.setAttribute("aria-current", "page");
+      var item = link.closest("li");
+      if (item) item.classList.add("is-current");
+    }
+  });
+})();
+</script>
+
+<script src="js/stackly-form-validation.js"></script>
+
+    <!-- AOS animation engine -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script id="stackly-aos-setup">
+    (function () {
+      var motionTypes = ['fade-up','fade-down','fade-left','fade-right','fade-up-right','fade-up-left','fade-down-right','fade-down-left','flip-left','flip-right','flip-up','flip-down','zoom-in','zoom-in-up','zoom-in-down','zoom-in-left','zoom-in-right','zoom-out','zoom-out-up','zoom-out-down','zoom-out-left','zoom-out-right','slide-up','slide-down','slide-left','slide-right'];
+      function setupStacklyAOS() {
+        var selectors = 'main section, .pq-section, .pq-service-box, .pq-blog-post, .pq-portfolio-box, .pq-icon-box, .pq-image-box, .pq-team-box, .pq-counter, .pq-testimonial-box, .pq-client-box, .pq-breadcrumb, .pq-button, .pq-section-title, .pq-contact-box';
+        var nodes = document.querySelectorAll(selectors);
+        var index = 0;
+        nodes.forEach(function (node) {
+          if (node.closest('#pq-loading') || node.hasAttribute('data-aos') || node.matches('header, footer, nav')) return;
+          node.setAttribute('data-aos', motionTypes[index % motionTypes.length]);
+          node.setAttribute('data-aos-duration', (650 + (index % 4) * 150).toString());
+          node.setAttribute('data-aos-easing', 'ease-out-cubic');
+          node.setAttribute('data-aos-once', 'true');
+          if (node.matches('.pq-service-box, .pq-blog-post, .pq-portfolio-box, .pq-icon-box, .pq-image-box, .pq-team-box, .pq-client-box')) node.setAttribute('data-aos-delay', ((index % 3) * 80).toString());
+          index++;
+        });
+        document.body.classList.add('stackly-motion-ready');
+        if (window.AOS) { AOS.init({ duration: 850, easing: 'ease-out-cubic', once: true, mirror: false, offset: 70, disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches }); }
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setupStacklyAOS); else setupStacklyAOS();
+      window.addEventListener('load', function () { if (window.AOS) AOS.refreshHard(); });
+    })();
+    </script>
+
+
+<script id="stackly-content-click-redirect">
+(function () {
+  "use strict";
+  document.addEventListener("click", function (event) {
+    var target = event.target && event.target.closest
+      ? event.target.closest("a, button, [role='button'], [onclick], input[type='button'], input[type='submit']")
+      : null;
+    if (!target) return;
+
+    /* Keep header/footer navigation, all form interactions, and direct contact actions intact. */
+    if (target.closest("header, footer, .stackly-organic-header, .stackly-organic-footer")) return;
+    if (target.closest("form, .wpcf7, .contact-form, .newsletter-form, [data-form]")) return;
+    if (target.matches("a[href^='mailto:'], a[href^='tel:']")) return;
+    if (target.closest("address, .address, [class*='address']")) return;
+    if (target.matches("input, select, textarea, label")) return;
+
+    event.preventDefault();
+    event.stopPropagation();
+    window.location.href = "404.html";
+  }, true);
+})();
+</script>
+
+
+<script id="stackly-mobile-navigation-controller">
+(function(){
+  function initStacklyNavigation(){
+    var header=document.getElementById('pq-header');
+    if(!header || header.dataset.stacklyNavInit==='1') return;
+    header.dataset.stacklyNavInit='1';
+    var toggle=header.querySelector('.stackly-nav-toggle');
+    var nav=header.querySelector('.stackly-main-nav');
+    if(!toggle || !nav) return;
+    document.body.classList.add('stackly-mobile-nav-ready');
+    toggle.removeAttribute('data-bs-toggle');
+    toggle.removeAttribute('data-bs-target');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-controls','navbarNavDropdown');
+    function closeMenu(){
+      nav.classList.remove('stackly-nav-open','show');
+      toggle.setAttribute('aria-expanded','false');
+      document.body.classList.remove('stackly-nav-locked');
+    }
+    function openMenu(){
+      nav.classList.add('stackly-nav-open');
+      toggle.setAttribute('aria-expanded','true');
+      document.body.classList.add('stackly-nav-locked');
+    }
+    toggle.addEventListener('click',function(){
+      if(toggle.getAttribute('aria-expanded')==='true') closeMenu(); else openMenu();
+    });
+    nav.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click',function(){ if(window.matchMedia('(max-width: 991px)').matches) closeMenu(); });
+    });
+    window.addEventListener('resize',function(){
+      if(window.innerWidth>991) closeMenu();
+    });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeMenu(); });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initStacklyNavigation);
+  else initStacklyNavigation();
+})();
+</script>
+
+</body>
+
+</html>

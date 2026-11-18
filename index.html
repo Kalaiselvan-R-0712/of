@@ -1,0 +1,2412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly - Organic Farming</title>
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="image/favicon/favicon.webp">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- rev css -->
+    <link rel="stylesheet" href="rev/css/rs6.css">
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="css/animations.min.css">
+
+    <!-- Owl slider -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!-- Magnafic Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+
+    <!-- Font Link -->
+    <link rel="stylesheet" href="font/flaticons_1/flaticon_agriculture.css">
+    <link rel="stylesheet" href="font/flaticons_2/flaticon_mycollection.css">
+    <link rel="stylesheet" href="font/ionicons/ionicons.min.css">
+    <link rel="stylesheet" href="font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="font/font-awesome/css/all.min.css">
+
+
+    <!-- AOS: scroll-triggered motion system -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style id="stackly-motion-and-hover-system">
+      @media (hover:hover) and (pointer:fine) and (min-width:1025px) {
+        body:not(.stackly-motion-ready) a, body:not(.stackly-motion-ready) button { transition: color .28s ease, background-color .28s ease, border-color .28s ease, box-shadow .28s ease, transform .28s ease; }
+        body.stackly-motion-ready a:not(.no-hover), body.stackly-motion-ready button:not(.no-hover), body.stackly-motion-ready .pq-button, body.stackly-motion-ready .pq-service-box, body.stackly-motion-ready .pq-blog-post, body.stackly-motion-ready .pq-portfolio-box, body.stackly-motion-ready .pq-icon-box, body.stackly-motion-ready .pq-image-box, body.stackly-motion-ready .pq-team-box, body.stackly-motion-ready .pq-client-box, body.stackly-motion-ready .stackly-header-inner img, body.stackly-motion-ready .pq-footer img { transition: transform .32s cubic-bezier(.2,.75,.25,1), box-shadow .32s ease, color .25s ease, background-color .25s ease, border-color .25s ease; }
+        body.stackly-motion-ready .pq-service-box:hover, body.stackly-motion-ready .pq-blog-post:hover, body.stackly-motion-ready .pq-portfolio-box:hover, body.stackly-motion-ready .pq-icon-box:hover, body.stackly-motion-ready .pq-image-box:hover, body.stackly-motion-ready .pq-team-box:hover, body.stackly-motion-ready .pq-client-box:hover { transform: translateY(-6px); box-shadow: 0 16px 38px rgba(16,37,26,.13); }
+        body.stackly-motion-ready a:hover, body.stackly-motion-ready button:hover, body.stackly-motion-ready .pq-button:hover { filter: brightness(1.045); }
+        body.stackly-motion-ready img:not(.no-hover):hover { filter: saturate(1.06); }
+        body.stackly-motion-ready .pq-button:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(16,37,26,.16); }
+        body.stackly-motion-ready input:focus, body.stackly-motion-ready textarea:focus, body.stackly-motion-ready select:focus { box-shadow: 0 0 0 4px rgba(183,139,59,.16); }
+      }
+      @media (hover:none), (pointer:coarse), (max-width:1024px) {
+        body.stackly-motion-ready a:hover, body.stackly-motion-ready button:hover, body.stackly-motion-ready img:hover, body.stackly-motion-ready .pq-service-box:hover, body.stackly-motion-ready .pq-blog-post:hover, body.stackly-motion-ready .pq-portfolio-box:hover, body.stackly-motion-ready .pq-icon-box:hover, body.stackly-motion-ready .pq-image-box:hover, body.stackly-motion-ready .pq-team-box:hover { transform:none !important; filter:none !important; box-shadow:inherit; }
+      }
+      [data-aos] { will-change: transform, opacity; }
+      @media (prefers-reduced-motion:reduce) { [data-aos], [data-aos] * { transition-duration:.01ms !important; animation-duration:.01ms !important; } }
+    </style>
+
+<style id="stackly-fullsite-premium-hover-effects">
+/* Desktop-only, fine-pointer hover system. Tablet/mobile remain touch-native. */
+@media (hover: hover) and (pointer: fine) and (min-width: 1025px) {
+  :root {
+    --stackly-hover-ease: cubic-bezier(.2,.75,.25,1);
+    --stackly-hover-shadow: 0 14px 34px rgba(16,37,26,.16);
+    --stackly-hover-gold: rgba(212,166,94,.28);
+  }
+
+  /* Every actionable control and navigation-sized detail */
+  a, button, [role="button"], input[type="button"], input[type="submit"],
+  .pq-button, .pq-list-item, .pq-tabs, .pq-social-icon,
+  .stackly-header-inner .navbar-nav > li > a,
+  .stackly-organic-footer a {
+    transition: color .28s var(--stackly-hover-ease),
+      background-color .28s var(--stackly-hover-ease),
+      border-color .28s var(--stackly-hover-ease),
+      box-shadow .28s var(--stackly-hover-ease),
+      transform .28s var(--stackly-hover-ease),
+      filter .28s var(--stackly-hover-ease);
+  }
+
+  a:not(.no-hover):hover,
+  button:not(.no-hover):hover,
+  [role="button"]:not(.no-hover):hover,
+  input[type="button"]:hover,
+  input[type="submit"]:hover {
+    filter: brightness(1.055);
+  }
+
+  .pq-button:hover,
+  a.pq-button:hover,
+  button.pq-button:hover {
+    transform: translateY(-4px) scale(1.025);
+    box-shadow: 0 13px 27px rgba(16,37,26,.2);
+  }
+
+  /* Image hover treatment: photographs, circular images, cards and thumbnails */
+  img:not(.no-hover):not([src*="logo"]):not([alt*="logo"]):not([class*="logo"]):not([class*="icon"]):not([class*="avatar"]) {
+    transition: transform .48s var(--stackly-hover-ease),
+      filter .42s ease, box-shadow .42s ease;
+    transform-origin: center;
+  }
+
+  img:not(.no-hover):not([src*="logo"]):not([alt*="logo"]):not([class*="logo"]):not([class*="icon"]):not([class*="avatar"]):hover {
+    transform: scale(1.045);
+    filter: saturate(1.13) contrast(1.035) brightness(1.025);
+    box-shadow: 0 13px 30px rgba(16,37,26,.19);
+  }
+
+  /* Make the full image frame respond when its image is hovered */
+  .pq-image-border, .pq-about-media, .pq-image-box,
+  .pq-portfolio-box, .pq-blog-post, .pq-team-box,
+  .pq-service-box, .pq-client-box, .pq-product,
+  .pq-product-box, .pq-gallery-item, .pq-project-item {
+    transition: transform .38s var(--stackly-hover-ease),
+      box-shadow .38s ease, border-color .32s ease;
+  }
+
+  .pq-image-border:hover, .pq-about-media:hover,
+  .pq-image-box:hover, .pq-portfolio-box:hover,
+  .pq-blog-post:hover, .pq-team-box:hover,
+  .pq-service-box:hover, .pq-client-box:hover,
+  .pq-product:hover, .pq-product-box:hover,
+  .pq-gallery-item:hover, .pq-project-item:hover {
+    box-shadow: var(--stackly-hover-shadow);
+  }
+
+  /* About Stackly: the large image, circular image, framed image and list */
+  .pq-about-media img:hover,
+  .pq-about-media .pq-image-border:hover img,
+  .pq-about-us-items img:hover {
+    transform: scale(1.055);
+  }
+
+  .pq-about-media .pq-image-4 {
+    transition: transform .48s var(--stackly-hover-ease),
+      filter .42s ease, box-shadow .42s ease;
+  }
+
+  .pq-about-media .pq-image-4:hover {
+    transform: scale(1.075) rotate(1.2deg);
+    box-shadow: 0 16px 34px rgba(16,37,26,.22);
+  }
+
+  .pq-list .pq-list-item {
+    position: relative;
+    transition: transform .28s var(--stackly-hover-ease),
+      color .28s ease, text-shadow .28s ease;
+    transform-origin: left center;
+    cursor: default;
+  }
+
+  .pq-list .pq-list-item:hover {
+    transform: translateX(8px);
+    color: #fff;
+    text-shadow: 0 4px 15px rgba(16,37,26,.18);
+  }
+
+  .pq-list .pq-list-item i,
+  .pq-list .pq-list-item svg {
+    display: inline-block;
+    transition: transform .3s var(--stackly-hover-ease),
+      color .3s ease, filter .3s ease;
+  }
+
+  .pq-list .pq-list-item:hover i,
+  .pq-list .pq-list-item:hover svg {
+    transform: translateX(5px) scale(1.16);
+    filter: drop-shadow(0 3px 5px rgba(16,37,26,.2));
+  }
+
+  /* Small icons, labels, badges, section markers and decorative details */
+  .pq-icon, .pq-service-icon, .pq-testimonial-icon,
+  .pq-section-title img, .pq-title-sub-title img,
+  .pq-icon-box .pq-icon i, .pq-social-icon,
+  .pq-contact-box i, .stackly-contact-icon,
+  .pq-list-item i, .pq-tabs i {
+    transition: transform .32s var(--stackly-hover-ease),
+      color .28s ease, filter .32s ease;
+  }
+
+  .pq-icon:hover, .pq-service-icon:hover,
+  .pq-testimonial-icon:hover, .pq-section-title img:hover,
+  .pq-title-sub-title img:hover, .pq-icon-box .pq-icon:hover i,
+  .pq-social-icon:hover, .pq-contact-box i:hover,
+  .stackly-contact-icon:hover, .pq-tabs:hover i {
+    transform: translateY(-3px) scale(1.12);
+    filter: drop-shadow(0 5px 8px rgba(16,37,26,.2));
+  }
+
+  /* Card headings and small text links */
+  .pq-service-box:hover .pq-service-box-title,
+  .pq-icon-box:hover .pq-icon-text,
+  .pq-blog-post:hover .pq-blog-title,
+  .pq-portfolio-box:hover .pq-portfolio-title,
+  .pq-image-box:hover h4,
+  .pq-team-box:hover h4 {
+    color: #b78b3b;
+    transition: color .28s ease;
+  }
+
+  .pq-service-box:hover, .pq-icon-box:hover,
+  .pq-blog-post:hover, .pq-portfolio-box:hover,
+  .pq-team-box:hover, .pq-client-box:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--stackly-hover-shadow);
+  }
+
+  /* Header/footer micro-interactions, without changing their destinations */
+  .stackly-header-inner img:hover,
+  .stackly-organic-footer img:hover {
+    transform: scale(1.035);
+  }
+
+  /* Respect explicitly disabled hover elements */
+  .no-hover, .no-hover:hover,
+  .no-hover img, .no-hover img:hover {
+    transform: none !important;
+    filter: none !important;
+    box-shadow: none !important;
+  }
+}
+
+@media (hover: none), (pointer: coarse), (max-width: 1024px) {
+  #stackly-fullsite-premium-hover-effects { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #stackly-fullsite-premium-hover-effects ~ * { scroll-behavior: auto; }
+}
+</style>
+
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+<style id="stackly-contact-details-hover">
+@media (hover:hover) and (pointer:fine) and (min-width:1025px) {
+  .stackly-footer-contact-row > span:first-child {
+    display: inline-flex;
+    align-items: center;
+    transition: transform .3s cubic-bezier(.2,.75,.25,1), color .3s ease, text-shadow .3s ease;
+    cursor: default;
+  }
+  .stackly-footer-contact-row > span:first-child:hover {
+    transform: translateX(4px);
+    color: #d4a65e;
+    text-shadow: 0 4px 14px rgba(212,166,94,.18);
+  }
+  .stackly-footer-contact-row > a {
+    transition: transform .3s cubic-bezier(.2,.75,.25,1), color .3s ease, filter .3s ease;
+  }
+  .stackly-footer-contact-row > a:hover {
+    transform: translateX(4px);
+    color: #d4a65e;
+    filter: brightness(1.06);
+  }
+  .stackly-footer-contact-row .stackly-contact-icon {
+    transition: transform .3s cubic-bezier(.2,.75,.25,1), filter .3s ease;
+  }
+  .stackly-footer-contact-row > span:first-child:hover .stackly-contact-icon,
+  .stackly-footer-contact-row > a:hover .stackly-contact-icon {
+    transform: translateY(-2px) scale(1.1);
+    filter: drop-shadow(0 4px 7px rgba(212,166,94,.25));
+  }
+}
+@media (hover:none), (pointer:coarse), (max-width:1024px) {
+  .stackly-footer-contact-row > span:first-child,
+  .stackly-footer-contact-row > a { transform:none; }
+}
+</style>
+
+
+<style id="stackly-desktop-counter-testimonial-hover">
+/* Extra hover treatment for statistic counters and testimonial cards.
+   Intentionally restricted to desktop/laptop fine-pointer devices. */
+@media (hover: hover) and (pointer: fine) and (min-width: 1025px) {
+  .pq-counter,
+  .pq-counter.pq-counter-style-1 {
+    position: relative;
+    transition: transform .38s cubic-bezier(.2,.75,.25,1),
+                box-shadow .38s ease,
+                border-color .32s ease,
+                background-color .32s ease;
+  }
+
+  .pq-counter.pq-counter-style-1:hover {
+    transform: translateY(-6px);
+    border-top-color: #d4a65e;
+    border-bottom-color: #d4a65e;
+    box-shadow: 0 12px 28px rgba(16,37,26,.10);
+  }
+
+  .pq-counter .pq-counter-icon {
+    transition: transform .38s cubic-bezier(.2,.75,.25,1),
+                color .3s ease,
+                filter .3s ease;
+  }
+
+  .pq-counter:hover .pq-counter-icon {
+    transform: translateY(-4px) scale(1.12);
+    color: #d4a65e;
+    filter: drop-shadow(0 5px 8px rgba(212,166,94,.25));
+  }
+
+  .pq-counter .pq-counter-num-prefix,
+  .pq-counter .pq-counter-description {
+    transition: color .3s ease, transform .3s ease;
+  }
+
+  .pq-counter:hover .pq-counter-num-prefix {
+    transform: translateY(-2px);
+  }
+
+  .pq-counter:hover .pq-counter-description {
+    color: #b78b3b;
+  }
+
+  .pq-testimonial-box {
+    transition: transform .42s cubic-bezier(.2,.75,.25,1),
+                box-shadow .42s ease,
+                border-color .35s ease,
+                background-color .35s ease;
+    will-change: transform;
+  }
+
+  .pq-testimonial-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 42px rgba(16,37,26,.16);
+  }
+
+  .pq-testimonial-box .pq-testimonial-star i {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(.2,.75,.25,1),
+                filter .3s ease;
+  }
+
+  .pq-testimonial-box:hover .pq-testimonial-star i {
+    transform: translateY(-3px) scale(1.12);
+    filter: drop-shadow(0 3px 5px rgba(255,209,45,.35));
+  }
+
+  .pq-testimonial-box .pq-testimonial-img img {
+    transition: transform .42s cubic-bezier(.2,.75,.25,1),
+                box-shadow .42s ease,
+                filter .35s ease;
+  }
+
+  .pq-testimonial-box:hover .pq-testimonial-img img {
+    transform: scale(1.09);
+    box-shadow: 0 8px 18px rgba(16,37,26,.2);
+    filter: saturate(1.12);
+  }
+
+  .pq-testimonial-box .pq-testimonial-meta,
+  .pq-testimonial-box .pq-testimonial-description {
+    transition: transform .32s ease, color .32s ease;
+  }
+
+  .pq-testimonial-box:hover .pq-testimonial-meta {
+    transform: translateX(3px);
+  }
+}
+
+@media (hover: none), (pointer: coarse), (max-width: 1024px) {
+  .pq-counter,
+  .pq-counter.pq-counter-style-1,
+  .pq-testimonial-box {
+    transform: none;
+    box-shadow: inherit;
+  }
+}
+</style>
+
+
+<style id="stackly-responsive-navigation-footer-fix">
+/* Responsive header, navigation and footer refinements */
+#pq-header.stackly-organic-header{z-index:1050}
+#pq-header.stackly-organic-header .stackly-header-inner{box-sizing:border-box}
+.stackly-header-brand img{height:auto}
+.stackly-mobile-actions{display:none}
+.stackly-nav-toggle{width:46px;height:46px;align-items:center;justify-content:center;flex-direction:column;gap:5px;cursor:pointer;position:relative;z-index:1060}
+.stackly-nav-toggle span{width:26px;height:2px;margin:0;display:block;transition:transform .25s ease,opacity .2s ease}
+.stackly-nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.stackly-nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.stackly-nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (max-width: 991px){
+  body{overflow-x:hidden}
+  #pq-header.stackly-organic-header{position:fixed!important;top:0;left:0;right:0;width:100%;background:#fff;box-shadow:0 5px 24px rgba(24,55,30,.10)}
+  body.stackly-mobile-nav-ready{padding-top:82px}
+  #pq-header.stackly-organic-header .stackly-header-inner{width:100%;min-height:82px;padding:8px 22px;display:flex;flex-wrap:nowrap;justify-content:space-between;gap:12px}
+  .stackly-header-brand{order:1;margin:0}
+  .stackly-header-brand img{width:clamp(135px,24vw,180px);max-height:62px}
+  .stackly-nav-toggle{display:flex!important;order:2;margin:0 0 0 auto;flex:0 0 46px;padding:8px!important}
+  .stackly-login-register{display:none!important}
+  #pq-header.stackly-organic-header .stackly-main-nav,
+  #pq-header.stackly-organic-header .stackly-main-nav.collapse{display:none!important;position:absolute;top:100%;left:0;right:0;width:100%;max-height:calc(100vh - 82px);overflow-y:auto;overscroll-behavior:contain;background:#fff;padding:12px 20px 24px;box-shadow:0 14px 22px rgba(15,40,22,.14);border-top:1px solid rgba(30,71,43,.08)}
+  #pq-header.stackly-organic-header .stackly-main-nav.stackly-nav-open{display:block!important}
+  .stackly-main-nav ul{display:flex!important;flex-direction:column;align-items:center!important;justify-content:center;gap:0;width:100%;margin:0;padding:0;list-style:none}
+  .stackly-main-nav ul li{width:100%;margin:0!important;text-align:center}
+  .stackly-main-nav ul li a{display:block;width:100%;padding:13px 10px!important;text-align:center;border-bottom:1px solid rgba(30,71,43,.09);font-size:16px}
+  .stackly-mobile-actions{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;width:100%;padding:20px 0 4px}
+  .stackly-mobile-actions a{display:flex;align-items:center;justify-content:center;width:min(260px,90%);min-height:44px;padding:10px 18px;border-radius:4px;background:#1e472b;color:#fff!important;text-decoration:none;font-size:15px;font-weight:700;text-align:center}
+  .stackly-mobile-actions a:nth-child(2){background:#b78b3b;color:#10251a!important}
+  .stackly-mobile-actions a:nth-child(3){background:#10251a}
+  body.stackly-nav-locked{overflow:hidden!important;touch-action:none}
+  .stackly-footer-main,.stackly-footer-bottom{width:calc(100% - 40px)}
+  .stackly-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));text-align:center;justify-items:center}
+  .stackly-footer-grid>div{width:100%;text-align:center}
+  .stackly-footer-brand{justify-content:center}
+  .stackly-footer-brand img{object-position:center}
+  .stackly-footer-grid h3:after{left:50%;transform:translateX(-50%)}
+  .stackly-footer-links ul,.stackly-footer-focus ul{display:flex;flex-direction:column;align-items:center}
+  .stackly-footer-social{justify-content:center}
+  .stackly-footer-contact-row{grid-template-columns:1fr;text-align:center}
+  .stackly-footer-contact-row>a,.stackly-footer-contact-row>a:first-child{justify-content:center;padding:14px 8px}
+  .stackly-footer-contact-row>a+a{border-left:0;border-top:1px solid rgba(220,232,220,.18)}
+  .stackly-footer-bottom{flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px 0}
+  .stackly-footer-legal{justify-content:center;flex-wrap:wrap}
+}
+@media(max-width:575px){
+  body.stackly-mobile-nav-ready{padding-top:72px}
+  #pq-header.stackly-organic-header .stackly-header-inner{width:100%;min-height:72px;padding:6px 15px}
+  .stackly-header-brand img{width:138px;max-height:56px}
+  .stackly-nav-toggle{width:42px;height:42px;flex-basis:42px}
+  #pq-header.stackly-organic-header .stackly-main-nav,
+  #pq-header.stackly-organic-header .stackly-main-nav.collapse{max-height:calc(100vh - 72px)}
+  .stackly-footer-main,.stackly-footer-bottom{width:calc(100% - 32px)}
+  .stackly-footer-main{padding:42px 0 24px}
+  .stackly-footer-grid{grid-template-columns:minmax(0,1fr);gap:28px}
+  .stackly-footer-about p,.stackly-footer-connect p{max-width:440px;margin-left:auto;margin-right:auto}
+  .stackly-footer-grid h3{margin-bottom:22px}
+  .stackly-footer-legal{gap:14px}
+}
+@media(min-width:992px) and (max-width:1199px){
+  #pq-header.stackly-organic-header .stackly-header-inner{width:calc(100% - 36px);gap:16px}
+  .stackly-header-brand img{width:175px}
+  .stackly-main-nav ul{gap:clamp(12px,1.5vw,20px)}
+  .stackly-main-nav ul li a{font-size:14px}
+  .stackly-login-register{padding:0 16px;font-size:14px}
+  .stackly-footer-grid{gap:26px}
+}
+@media(max-width:767px){
+  img,video,iframe{max-width:100%}
+  .container,.container-fluid{max-width:100%}
+  .row{margin-left:0;margin-right:0}
+  .stackly-footer-contact-row>a{min-width:0;overflow-wrap:anywhere}
+}
+</style>
+
+
+<style id="stackly-no-horizontal-overflow-fix">
+/* Final mobile/tablet viewport containment */
+html, body { width:100%; max-width:100%; overflow-x:clip !important; }
+@supports not (overflow:clip) { html, body { overflow-x:hidden !important; } }
+*, *::before, *::after { box-sizing:border-box; }
+@media (max-width:991px) {
+ html, body { min-width:0 !important; } body { position:relative; }
+ #pq-header, main, footer, section, .pq-footer, .stackly-organic-footer, .stackly-footer-main, .stackly-footer-bottom { max-width:100% !important; }
+ section { width:100%; }
+ .container, .container-fluid { width:calc(100% - 30px) !important; max-width:100% !important; padding-left:0 !important; padding-right:0 !important; margin-left:auto !important; margin-right:auto !important; }
+ .row { max-width:100%; margin-left:0 !important; margin-right:0 !important; }
+ .row > [class*="col-"] { min-width:0; max-width:100%; }
+ img, video, iframe, svg, canvas { max-width:100% !important; }
+ .pq-breadcrumb-style-1 { width:100% !important; max-width:100% !important; background-size:cover !important; background-position:center center !important; }
+ .pq-breadcrumb, .pq-breadcrumb .container, .pq-breadcrumb-title { max-width:100%; min-width:0; overflow-wrap:anywhere; }
+ .stackly-header-inner, .stackly-main-nav, .stackly-footer-grid, .stackly-footer-contact-row { min-width:0 !important; max-width:100% !important; }
+ .stackly-header-inner { overflow:visible; }
+ .stackly-footer-grid > *, .stackly-footer-contact-row > * { min-width:0; max-width:100%; }
+ .stackly-footer-grid p, .stackly-footer-grid a, .stackly-footer-contact-row a { overflow-wrap:anywhere; word-break:break-word; }
+ .stackly-main-nav ul, .stackly-main-nav li { min-width:0; max-width:100%; }
+}
+@media (max-width:575px) {
+ .container, .container-fluid { width:calc(100% - 30px) !important; }
+ .pq-breadcrumb-style-1 { padding:88px 0 !important; }
+ .pq-breadcrumb .pq-breadcrumb-title { font-size:clamp(28px, 8vw, 36px) !important; line-height:1.15 !important; text-align:center; }
+ .stackly-header-inner { width:100% !important; padding-left:15px !important; padding-right:15px !important; }
+ .stackly-header-brand { min-width:0; } .stackly-header-brand img { max-width:142px !important; }
+ .stackly-footer-main, .stackly-footer-bottom { width:calc(100% - 30px) !important; }
+}
+</style>
+
+
+<style id="stackly-full-height-mobile-menu-overlay">
+/* When the mobile menu is open, its white panel fills all space below
+   the fixed header through the bottom edge of the viewport. */
+@media (max-width: 991px) {
+  #pq-header.stackly-organic-header { position:fixed!important; top:0!important; left:0!important; right:0!important; z-index:1050!important; }
+  #pq-header.stackly-organic-header .stackly-main-nav,
+  #pq-header.stackly-organic-header .stackly-main-nav.collapse,
+  #pq-header.stackly-organic-header .stackly-main-nav.stackly-nav-open {
+    position:fixed!important;
+    top:82px!important;
+    bottom:0!important;
+    left:0!important;
+    right:0!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:calc(100vh - 82px)!important;
+    max-height:none!important;
+    overflow-y:auto!important;
+    overflow-x:hidden!important;
+    overscroll-behavior:contain!important;
+    background:#fff!important;
+    padding:12px 20px max(24px, env(safe-area-inset-bottom))!important;
+    box-shadow:none!important;
+    z-index:1049!important;
+  }
+  #pq-header.stackly-organic-header .stackly-main-nav:not(.stackly-nav-open) {
+    display:none!important;
+  }
+  #pq-header.stackly-organic-header .stackly-main-nav.stackly-nav-open {
+    display:block!important;
+  }
+}
+@media (max-width:575px) {
+  #pq-header.stackly-organic-header .stackly-main-nav,
+  #pq-header.stackly-organic-header .stackly-main-nav.collapse,
+  #pq-header.stackly-organic-header .stackly-main-nav.stackly-nav-open {
+    top:72px!important;
+    min-height:calc(100vh - 72px)!important;
+  }
+}
+@supports (height: 100dvh) {
+  @media (max-width:991px) {
+    #pq-header.stackly-organic-header .stackly-main-nav,
+    #pq-header.stackly-organic-header .stackly-main-nav.collapse,
+    #pq-header.stackly-organic-header .stackly-main-nav.stackly-nav-open {
+      min-height:calc(100dvh - 82px)!important;
+    }
+  }
+  @media (max-width:575px) {
+    #pq-header.stackly-organic-header .stackly-main-nav,
+    #pq-header.stackly-organic-header .stackly-main-nav.collapse,
+    #pq-header.stackly-organic-header .stackly-main-nav.stackly-nav-open {
+      min-height:calc(100dvh - 72px)!important;
+    }
+  }
+}
+</style>
+
+</head>
+
+<body class="stackly-home-page">
+
+    <!-- loading -->
+    <div id="pq-loading">
+        <div id="pq-loading-center">
+            <img loading="lazy" decoding="async" src="image/logo/logo-1.webp" alt="loading">
+        </div>
+    </div>
+
+    <!-- Header -->
+    <!-- Stackly Organic Farming Header -->
+<header id="pq-header" class="pq-header-style-1 pq-has-sticky stackly-organic-header">
+  <div class="stackly-header-inner">
+    <div class="stackly-header-brand">
+      <a href="index.html" aria-label="Stackly home"><img loading="lazy" decoding="async" src="image/logo/logo-1.webp" alt="Stackly"></a>
+    </div>
+    <button class="stackly-nav-toggle navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="stackly-main-nav collapse navbar-collapse" id="navbarNavDropdown" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="pages.html">Pages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="stackly-mobile-actions" aria-label="Account navigation">
+        <a href="login.html">Login / Register</a>
+      </div>
+    </nav>
+    <a class="stackly-login-register" href="login.html">Login / Register</a>
+  </div>
+</header>
+
+    <!-- banner -->
+    <div class="banner py-0">
+        <!-- START Home 3 REVOLUTION SLIDER 6.6.18 -->
+        <p class="rs-p-wp-fix"></p>
+        <rs-module-wrap id="rev_slider_11_1_wrapper" data-alias="home-2-1" data-source="gallery"
+            style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+            <rs-module id="rev_slider_11_1" data-version="6.6.18">
+                <rs-slides style="overflow: hidden; position: absolute;">
+                    <rs-slide style="position: absolute;" data-key="rs-43" data-title="Slide"
+                        data-thumb="rev/assets/page-3/1-2.webp" data-anim="ms:600;" data-in="o:0;" data-out="a:false;">
+                        <img src="rev/assets/page-3/1-2.webp" alt="" title="1 (2)" width="1920" height="1056"
+                            class="rev-slidebg tp-rs-img" data-no-retina>
+                        <!--
+							--><rs-layer id="slider-11-slide-43-layer-1" data-type="text" data-rsp_ch="on"
+                            data-xy="x:l,l,c,c;xo:30px,15px,0,0;y:m,m,m,b;yo:-20px,-20px,80px,210px;"
+                            data-text="w:normal;s:64,52,52,40;l:72,60,60,48;fw:500;a:left,left,center,center;"
+                            data-frame_0="x:50,39,29,17;" data-frame_1="st:1300;sp:1000;sR:1300;"
+                            data-frame_999="o:0;st:w;sR:6700;"
+                            style="z-index:6;font-family:'ClashDisplay';text-transform:capitalize;">Empowering
+                            Farmers,<br />
+                            <span class="rc-color">Growing the</span> Future<br />
+
+                        </rs-layer><!--
+
+							--><rs-layer id="slider-11-slide-43-layer-2" class="rev-btn" data-type="button"
+                            data-xy="x:l,l,c,c;xo:30px,15px,0,0;y:m,m,m,b;yo:220px,200px,210px,120px;"
+                            data-text="w:normal;s:18,18,18,16;l:32;a:center;" data-dim="minh:0px,none,none,none;"
+                            data-rsp_bd="off" data-padding="t:12,12,12,10;r:30;b:12,12,12,10;l:30;"
+                            data-border="bor:500px,500px,500px,500px;" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1700;sp:1000;sR:1700;" data-frame_999="o:0;st:w;sR:6300;"
+                            data-frame_hover="c:#1c2e16;bgc:#fff;bor:500px,500px,500px,500px;bri:120%;"
+                            style="z-index:7;background-color:#d4a65e;font-family:'ClashDisplay';text-transform:uppercase;">See
+                            Our Services
+                        </rs-layer><!--
+
+							--><rs-layer id="slider-11-slide-43-layer-5" data-type="text" data-rsp_ch="on"
+                            data-xy="x:l,l,c,c;xo:30px,15px,0,0;y:m,m,t,t;yo:110px,90px,310px,300px;"
+                            data-text="w:normal;s:18,18,0,0;l:32,32,0,0;a:left,left,center,center;"
+                            data-dim="w:641px,637px,663px,441px;" data-vbility="t,t,f,f" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1490;sp:1000;sR:1490;" data-frame_999="o:0;st:w;sR:6510;"
+                            style="z-index:10;font-family:'ClashDisplay';">Leverage cutting-edge technology to transform
+                            your farm and achieve sustainable growth. Innovative solutions designed to maximize yield,
+                            efficiency, and sustainability in agriculture.
+                        </rs-layer><!--
+
+							--><rs-layer id="slider-11-slide-43-layer-8" data-type="text" data-rsp_ch="on"
+                            data-xy="x:l,l,c,l;xo:70px,60px,30px,190px;y:m,m,b,b;yo:-120px,-100px,350px,320px;"
+                            data-text="w:normal;s:18,18,18,16;l:26;ls:1px;" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1000;sp:1000;sR:1000;" data-frame_999="o:0;st:w;sR:7000;"
+                            style="z-index:14;font-family:'ClashDisplay';text-transform:uppercase;">Farming Better
+                        </rs-layer><!--
+
+							--><rs-layer id="slider-11-slide-43-layer-9" data-type="image" data-rsp_ch="on"
+                            data-xy="x:l,l,c,l;xo:30px,15px,-87px,140px;y:m,m,b,b;yo:-120px,-100px,357px,330px;"
+                            data-text="w:normal;s:20,15,11,6;l:0,19,14,8;"
+                            data-dim="w:33px,33px,32px,30px;h:18px,18px,auto,16px;" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1000;sp:1000;sR:1000;" data-frame_999="o:0;st:w;sR:7000;"
+                            style="z-index:15;"><img src="rev/assets/page-3/group_1727.webp" alt="" class="tp-rs-img"
+                                width="135" height="73" data-no-retina>
+                        </rs-layer><!--
+--> </rs-slide>
+                    <rs-slide style="position: absolute;" data-key="rs-46" data-title="Slide" data-anim="ms:600;"
+                        data-in="o:0;" data-out="a:false;">
+                        <img src="rev/assets/page-3/2-5.webp" alt="" title="2" width="1920" height="1056"
+                            class="rev-slidebg tp-rs-img" data-no-retina>
+                        <!--
+							--><rs-layer id="slider-11-slide-46-layer-1" data-type="text" data-rsp_ch="on"
+                            data-xy="x:l,l,c,c;xo:30px,15px,0,0;y:m,m,m,b;yo:-20px,-20px,80px,210px;"
+                            data-text="w:normal;s:64,52,52,40;l:72,60,60,48;fw:500;a:left,left,center,center;"
+                            data-dim="w:852px,729px,691px,458px;" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1300;sp:1000;sR:1300;" data-frame_999="o:0;st:w;sR:6700;"
+                            style="z-index:6;font-family:'ClashDisplay';text-transform:capitalize;">Sustainable
+                            Agriculture
+                            for a <span class="rc-color">Sustainable Agriculture</span>
+                        </rs-layer><!--
+
+							--><rs-layer id="slider-11-slide-46-layer-2" class="rev-btn" data-type="button"
+                            data-xy="x:l,l,c,c;xo:30px,15px,0,0;y:m,m,m,b;yo:220px,200px,210px,120px;"
+                            data-text="w:normal;s:18,18,18,16;l:32;a:center;" data-dim="minh:0px,none,none,none;"
+                            data-rsp_bd="off" data-padding="t:12,12,12,10;r:30;b:12,12,12,10;l:30;"
+                            data-border="bor:500px,500px,500px,500px;" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1700;sp:1000;sR:1700;" data-frame_999="o:0;st:w;sR:6300;"
+                            data-frame_hover="c:#1c2e16;bgc:#fff;bor:500px,500px,500px,500px;bri:120%;"
+                            style="z-index:7;background-color:#d4a65e;font-family:'ClashDisplay';text-transform:uppercase;">See
+                            Our Services
+                        </rs-layer><!--
+
+							--><rs-layer id="slider-11-slide-46-layer-5" data-type="text" data-rsp_ch="on"
+                            data-xy="x:l,l,c,c;xo:30px,15px,0,0;y:m,m,t,t;yo:110px,90px,310px,300px;"
+                            data-text="w:normal;s:18,18,0,0;l:32,32,0,0;a:left,left,center,center;"
+                            data-dim="w:641px,637px,663px,441px;" data-vbility="t,t,f,f" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1490;sp:1000;sR:1490;" data-frame_999="o:0;st:w;sR:6510;"
+                            style="z-index:10;font-family:'ClashDisplay';">Leverage cutting-edge technology to transform
+                            your farm and achieve sustainable growth. Innovative solutions designed to maximize yield,
+                            efficiency, and sustainability in agriculture.
+                        </rs-layer><!--
+
+							--><rs-layer id="slider-11-slide-46-layer-8" data-type="text" data-rsp_ch="on"
+                            data-xy="x:l,l,c,l;xo:70px,60px,30px,190px;y:m,m,b,b;yo:-120px,-100px,350px,320px;"
+                            data-text="w:normal;s:18,18,18,16;l:26;ls:1px;" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1000;sp:1000;sR:1000;" data-frame_999="o:0;st:w;sR:7000;"
+                            style="z-index:14;font-family:'ClashDisplay';text-transform:uppercase;">Growing Smarter
+                        </rs-layer><!--
+
+							--><rs-layer id="slider-11-slide-46-layer-9" data-type="image" data-rsp_ch="on"
+                            data-xy="x:l,l,c,l;xo:30px,15px,-87px,140px;y:m,m,b,b;yo:-120px,-100px,357px,330px;"
+                            data-text="w:normal;s:20,15,11,6;l:0,19,14,8;"
+                            data-dim="w:33px,33px,32px,30px;h:18px,18px,auto,16px;" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1000;sp:1000;sR:1000;" data-frame_999="o:0;st:w;sR:7000;"
+                            style="z-index:15;"><img src="rev/assets/page-3/group_1727.webp" class="tp-rs-img"
+                                width="135" height="73" data-no-retina>
+                        </rs-layer><!--
+--> </rs-slide>
+                    <rs-slide style="position: absolute;" data-key="rs-47" data-title="Slide" data-anim="ms:600;"
+                        data-in="o:0;" data-out="a:false;">
+                        <img src="rev/assets/page-3/3-5.webp" alt="" title="3" width="1920" height="1056"
+                            class="rev-slidebg tp-rs-img" data-no-retina>
+                        <!--
+							--><rs-layer id="slider-11-slide-47-layer-1" data-type="text" data-rsp_ch="on"
+                            data-xy="x:l,l,c,c;xo:30px,15px,0,0;y:m,m,m,b;yo:-20px,-20px,80px,210px;"
+                            data-text="w:normal;s:64,52,52,40;l:72,60,60,48;fw:500;a:left,left,center,center;"
+                            data-dim="w:721px,611px,617px,434px;" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1300;sp:1000;sR:1300;" data-frame_999="o:0;st:w;sR:6700;"
+                            style="z-index:6;font-family:'ClashDisplay';text-transform:capitalize;">From Seed to
+                            Harvest,
+                            We’re <span class="rc-color">with You.</span>
+                        </rs-layer><!--
+
+							--><rs-layer id="slider-11-slide-47-layer-2" class="rev-btn" data-type="button"
+                            data-xy="x:l,l,c,c;xo:30px,15px,0,0;y:m,m,m,b;yo:220px,200px,210px,120px;"
+                            data-text="w:normal;s:18,18,18,16;l:32;a:center;" data-dim="minh:0px,none,none,none;"
+                            data-rsp_bd="off" data-padding="t:12,12,12,10;r:30;b:12,12,12,10;l:30;"
+                            data-border="bor:500px,500px,500px,500px;" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1700;sp:1000;sR:1700;" data-frame_999="o:0;st:w;sR:6300;"
+                            data-frame_hover="c:#1c2e16;bgc:#fff;bor:500px,500px,500px,500px;bri:120%;"
+                            style="z-index:7;background-color:#d4a65e;font-family:'ClashDisplay';text-transform:uppercase;">See
+                            Our Services
+                        </rs-layer><!--
+
+							--><rs-layer id="slider-11-slide-47-layer-5" data-type="text" data-rsp_ch="on"
+                            data-xy="x:l,l,c,c;xo:30px,15px,0,0;y:m,m,t,t;yo:110px,90px,310px,300px;"
+                            data-text="w:normal;s:18,18,0,0;l:32,32,0,0;a:left,left,center,center;"
+                            data-dim="w:641px,637px,663px,441px;" data-vbility="t,t,f,f" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1490;sp:1000;sR:1490;" data-frame_999="o:0;st:w;sR:6510;"
+                            style="z-index:10;font-family:'ClashDisplay';">Leverage cutting-edge technology to transform
+                            your farm and achieve sustainable growth. Innovative solutions designed to maximize yield,
+                            efficiency, and sustainability in agriculture.
+                        </rs-layer><!--
+
+							--><rs-layer id="slider-11-slide-47-layer-8" data-type="text" data-rsp_ch="on"
+                            data-xy="x:l,l,c,l;xo:70px,60px,30px,190px;y:m,m,b,b;yo:-120px,-100px,350px,320px;"
+                            data-text="w:normal;s:18,18,18,16;l:26;ls:1px;" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1000;sp:1000;sR:1000;" data-frame_999="o:0;st:w;sR:7000;"
+                            style="z-index:14;font-family:'ClashDisplay';text-transform:uppercase;">Farming Better
+                        </rs-layer><!--
+
+							--><rs-layer id="slider-11-slide-47-layer-9" data-type="image" data-rsp_ch="on"
+                            data-xy="x:l,l,c,l;xo:30px,15px,-87px,140px;y:m,m,b,b;yo:-120px,-100px,357px,330px;"
+                            data-text="w:normal;s:20,15,11,6;l:0,19,14,8;"
+                            data-dim="w:33px,33px,32px,30px;h:18px,18px,auto,16px;" data-frame_0="x:50,39,29,17;"
+                            data-frame_1="st:1000;sp:1000;sR:1000;" data-frame_999="o:0;st:w;sR:7000;"
+                            style="z-index:15;"><img src="rev/assets/page-3/group_1727.webp" alt="" class="tp-rs-img"
+                                width="135" height="73" data-no-retina>
+                        </rs-layer><!--
+--> </rs-slide>
+                </rs-slides>
+            </rs-module>
+    </div>
+
+    <!-- Main-title -->
+    <section class="pq-pb-60">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12 wow fadeInUp">
+                    <img loading="lazy" decoding="async" class="pq-icon-logo mb-4" src="image/icon-logo/icon-logo.webp" alt="icon-logo">
+                    <h1 class="pq-banner-title">At Stackly, we are committed to advancing sustainable farming practices
+                        and harnessing the power of innovation to feed the world. </h1>
+                    <div class="pq-btn-container text-center mt-4">
+                        <a class="pq-button pq-button-flat" href="about.html">
+                            <span class="text">Read More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Icon-Box -->
+    <section class="service pq-border-top pt-5 stackly-benefits">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-6">
+                    <div class="pq-icon-box pq-style-4 text-left wow fadeInUp">
+                        <div class="pq-icon">
+                            <i class=" flaticon-offer" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon-info">
+                            <h5 class="pq-icon-text">Member Discount</h5>
+
+                            <p class="pq-icon-description">Join now and start saving!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-6 mt-4 mt-lg-0">
+                    <div class="pq-icon-box pq-style-4 text-left wow fadeInUp">
+                        <div class="pq-icon">
+                            <i class=" flaticon-return-of-investment" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon-info">
+                            <h5 class="pq-icon-text">Money Refund</h5>
+
+                            <p class="pq-icon-description">
+                                Money-Back Guarantee </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-6 mt-4 mt-xl-0">
+                    <div class="pq-icon-box pq-style-4 text-left wow fadeInUp">
+                        <div class="pq-icon">
+                            <i class=" flaticon-delivery-truck" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon-info">
+                            <h5 class="pq-icon-text">Free Shipping</h5>
+
+                            <p class="pq-icon-description">Enjoy free deliver</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-6 mt-4 mt-xl-0">
+                    <div class="pq-icon-box pq-style-4 text-left wow fadeInUp">
+                        <div class="pq-icon">
+                            <i class=" flaticon-online-support" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon-info">
+                            <h5 class="pq-icon-text">Online Support</h5>
+
+                            <p class="pq-icon-description">Here to help 24/7!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About-Us -->
+    <section class="about-us pq-pb-220 pq-bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="pq-section-title text-start pe-2 m-0">
+                        <div class="pq-title">
+                            <div class="pq-title-sub-title">
+                                <img loading="lazy" decoding="async" src="image/section-image/group_1727.webp" alt="image">
+                                <span>Our About</span>
+                            </div>
+                            <h5 class="pq-title-hadding">Sustainable Agriculture for a Greener <span>Tomorrow</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <p>
+                        At Stackly, we believe in using cutting-edge technology to help farmers grow more efficiently
+                        and sustainably. We are dedicated to providing eco-friendly agricultural solutions that enhance
+                        productivity while protecting the planet.</p>
+
+                    <p class="m-0">
+                        With years of experience, Stackly continues to lead the industry in introducing advanced tools
+                        for smarter farming. Stackly is your trusted partner, providing the expertise and tools needed
+                        to achieve farming success. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image -->
+    <div class="image stackly-home-feature-image">
+        <div class="container">
+            <img class="pq-mt-160 stackly-home-feature-img" src="image/image-home-optimized.webp" alt="Organic farming at Stackly" loading="lazy" decoding="async">
+        </div>
+    </div>
+
+    <!-- Product -->
+    <section class="product stackly-featured-products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pq-section-title text-center wow fadeInUp">
+                        <div class="pq-title">
+                            <div class="pq-title-sub-title justify-content-center">
+                                <img loading="lazy" decoding="async" src="image/section-image/group_1727.webp" alt="image">
+                                <span>Customers’ Choice</span>
+                            </div>
+                            <h5 class="pq-title-hadding">Featured <span>Products</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="pq-image-box pq-style-1 wow fadeInUp">
+                        <div class="pq-iamge-box-media">
+                            <img loading="lazy" decoding="async" src="image/image-box/style-2/shop-img-7.webp" alt="Image">
+                            <span>Sale!</span>
+                            <div class="pq-image-box-overlay">
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="pq-image-box-info mt-3">
+                            <div class="pq-image-box-icon pb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="pq-image-box-title">
+                                <a href="#">Banana</a>
+                            </h5>
+                            <span class="pq-image-box-content"><a href="#">Fruits</a></span>
+                            <div class="pq-image-box-price pt-2">
+                                <span class="pq-line-throw">$60.00</span>
+                                <span>$30.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                    <div class="pq-image-box pq-style-1 wow fadeInUp">
+                        <div class="pq-iamge-box-media">
+                            <img loading="lazy" decoding="async" src="image/image-box/style-2/shop-img-5.webp" alt="Image">
+                            <span>Sale!</span>
+                            <div class="pq-image-box-overlay">
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="pq-image-box-info mt-3">
+                            <div class="pq-image-box-icon pb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="pq-image-box-title">
+                                <a href="#">Carrot</a>
+                            </h5>
+                            <span class="pq-image-box-content"><a href="#">Vegetables</a></span>
+                            <div class="pq-image-box-price pt-2">
+                                <span class="pq-line-throw">$60.00</span>
+                                <span>$30.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mt-5 mt-lg-0 col-md-6">
+                    <div class="pq-image-box pq-style-1 wow fadeInUp">
+                        <div class="pq-iamge-box-media">
+                            <img loading="lazy" decoding="async" src="image/image-box/style-2/shop-img-2.webp" alt="Image">
+                            <span>Sale!</span>
+                            <div class="pq-image-box-overlay">
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="pq-image-box-info mt-3">
+                            <div class="pq-image-box-icon pb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="pq-image-box-title">
+                                <a href="#">Blue eggplant</a>
+                            </h5>
+                            <span class="pq-image-box-content"><a href="#">Vegetables</a></span>
+                            <div class="pq-image-box-price pt-2">
+                                <span class="pq-line-throw">$60.00</span>
+                                <span>$30.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mt-5 mt-lg-0 col-md-6">
+                    <div class="pq-image-box pq-style-1 wow fadeInUp">
+                        <div class="pq-iamge-box-media">
+                            <img loading="lazy" decoding="async" src="image/image-box/style-2/shop-img-4.webp" alt="Image">
+                            <span>Sale!</span>
+                            <div class="pq-image-box-overlay">
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="pq-image-box-info mt-3">
+                            <div class="pq-image-box-icon pb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="pq-image-box-title">
+                                <a href="#">Orange</a>
+                            </h5>
+                            <span class="pq-image-box-content"><a href="#">Fruits, Organic Foods</a></span>
+                            <div class="pq-image-box-price pt-2">
+                                <span class="pq-line-throw">$60.00</span>
+                                <span>$30.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mt-5 col-md-6">
+                    <div class="pq-image-box pq-style-1 wow fadeInUp">
+                        <div class="pq-iamge-box-media">
+                            <img loading="lazy" decoding="async" src="image/image-box/style-2/shop-img-4.webp" alt="Image">
+                            <span>Sale!</span>
+                            <div class="pq-image-box-overlay">
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="pq-image-box-info mt-3">
+                            <div class="pq-image-box-icon pb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="pq-image-box-title">
+                                <a href="#">Orange</a>
+                            </h5>
+                            <span class="pq-image-box-content"><a href="#">Fruits, Organic Foods</a></span>
+                            <div class="pq-image-box-price pt-2">
+                                <span class="pq-line-throw">$60.00</span>
+                                <span>$30.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 mt-5 col-md-6">
+                    <div class="pq-image-box pq-style-1 wow fadeInUp">
+                        <div class="pq-iamge-box-media">
+                            <img loading="lazy" decoding="async" src="image/image-box/style-2/shop-img-2.webp" alt="Image">
+                            <span>Sale!</span>
+                            <div class="pq-image-box-overlay">
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="pq-image-box-info mt-3">
+                            <div class="pq-image-box-icon pb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="pq-image-box-title">
+                                <a href="#">Blue eggplant</a>
+                            </h5>
+                            <span class="pq-image-box-content"><a href="#">Vegetables</a></span>
+                            <div class="pq-image-box-price pt-2">
+                                <span class="pq-line-throw">$60.00</span>
+                                <span>$30.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 mt-5 col-md-6">
+                    <div class="pq-image-box pq-style-1 wow fadeInUp">
+                        <div class="pq-iamge-box-media">
+                            <img loading="lazy" decoding="async" src="image/image-box/style-2/shop-img-5.webp" alt="Image">
+                            <span>Sale!</span>
+                            <div class="pq-image-box-overlay">
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="pq-image-box-info mt-3">
+                            <div class="pq-image-box-icon pb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="pq-image-box-title">
+                                <a href="#">Carrot</a>
+                            </h5>
+                            <span class="pq-image-box-content"><a href="#">Vegetables</a></span>
+                            <div class="pq-image-box-price pt-2">
+                                <span class="pq-line-throw">$60.00</span>
+                                <span>$30.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mt-5 col-md-6">
+                    <div class="pq-image-box pq-style-1 wow fadeInUp">
+                        <div class="pq-iamge-box-media">
+                            <img loading="lazy" decoding="async" src="image/image-box/style-2/shop-img-7.webp" alt="Image">
+                            <span>Sale!</span>
+                            <div class="pq-image-box-overlay">
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="pq-image-box-info mt-3">
+                            <div class="pq-image-box-icon pb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="pq-image-box-title">
+                                <a href="#">Banana</a>
+                            </h5>
+                            <span class="pq-image-box-content"><a href="#">Fruits</a></span>
+                            <div class="pq-image-box-price pt-2">
+                                <span class="pq-line-throw">$60.00</span>
+                                <span>$30.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- appointment -->
+    <section class="appointment pq-bg-3-image pq-py-90 ">
+        <div class="container">
+            <div class="pq-icon-box-item">
+                <div class="pq-icon-box pq-style-5">
+                    <div class="pq-ixon-box-logo wow zoomIn">
+                        <div class="pq-icon-box-icon">
+                            <i aria-hidden="true" class=" flaticon-planting-1"></i>
+                        </div>
+                    </div>
+
+                    <div class="pq-icon-box-content wow zoomIn">
+                        <h3 class="pq-icon-box-title">We’re popular leader in agriculture market globally</h3>
+                    </div>
+                </div>
+                <div class="pq-btn-container mt-4 wow zoomIn">
+                    <a href="about.html" class="pq-button pq-button-flat">
+                        <span class="pq-button-text">discover more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose The Best -->
+    <section class="service stackly-choose-best">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="pq-section-title text-start pe-lg-5 wow fadeInUp">
+                        <div class="pq-title">
+                            <div class="pq-title-sub-title">
+                                <img loading="lazy" decoding="async" src="image/section-image/group_1727.webp" alt="image">
+                                <span>Choose The Best</span>
+                            </div>
+                            <h5 class="pq-title-hadding">Sustainable Farming <span>Solutions</span></h5>
+                            <p class="pq-title-description">We provide innovative strategies and practices to help
+                                farmers adopt sustainable methods that enhance productivity while preserving the
+                                environment. </p>
+                        </div>
+
+                        <div class="pq-btn-container mt-4">
+                            <a class="pq-button pq-button-flat" href="#">
+                                <span class="text">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="pq-service-items">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="pq-service-box pq-style-4 text-left wow fadeInUp">
+                                    <div class="pq-service-info">
+                                        <h5 class="pq-service-box-title"> Modern Machinery</h5>
+                                        <div class="pq-service-icon">
+                                            <i class=" flaticon-shovel" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="pq-service-img-info">
+                                        <div class="pq-service-img">
+                                            <img loading="lazy" decoding="async" src="image/service/style-4/service-img-18.webp" alt="service image">
+                                        </div>
+                                    </div>
+                                    <p class="pq-service-box-description">Integrated solutions to identify and manage
+                                        pests and diseases using
+                                        eco-friendly strategies.</p>
+                                    <div class="pq-btn-container">
+                                        <a class="pq-button pq-button-link" href="our-service.html">
+                                            <div class="pq-button-block">
+                                                <span class="pq-button-text">Read More</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <div class="pq-service-box pq-style-4 text-left wow fadeInUp">
+                                    <div class="pq-service-info">
+                                        <h5 class="pq-service-box-title">Crop Production</h5>
+                                        <div class="pq-service-icon">
+                                            <i class=" flaticon-irrigation" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="pq-service-img-info">
+                                        <div class="pq-service-img">
+                                            <img loading="lazy" decoding="async" decoding="async" src="image/service/style-4/service-img-19.webp"
+                                                alt="service image">
+                                        </div>
+                                    </div>
+                                    <p class="pq-service-box-description">Integrated solutions to identify and manage
+                                        pests and diseases using
+                                        eco-friendly strategies.</p>
+                                    <div class="pq-btn-container">
+                                        <a class="pq-button pq-button-link" href="our-service.html">
+                                            <div class="pq-button-block">
+                                                <span class="pq-button-text">Read More</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mt-4">
+                                <div class="pq-service-box pq-style-4 text-left wow fadeInUp">
+                                    <div class="pq-service-info">
+                                        <h5 class="pq-service-box-title">Harvesting Services</h5>
+                                        <div class="pq-service-icon">
+                                            <i class=" flaticon-peasant" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="pq-service-img-info">
+                                        <div class="pq-service-img">
+                                            <img loading="lazy" decoding="async" decoding="async" src="image/service/style-4/service-img-21.webp"
+                                                alt="service image">
+                                        </div>
+                                    </div>
+                                    <p class="pq-service-box-description">Integrated solutions to identify and manage
+                                        pests and diseases using
+                                        eco-friendly strategies.</p>
+                                    <div class="pq-btn-container">
+                                        <a class="pq-button pq-button-link" href="our-service.html">
+                                            <div class="pq-button-block">
+                                                <span class="pq-button-text">Read More</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mt-4">
+                                <div class="pq-service-box pq-style-4 text-left wow fadeInUp">
+                                    <div class="pq-service-info">
+                                        <h5 class="pq-service-box-title">Irrigation Solutions</h5>
+                                        <div class="pq-service-icon">
+                                            <i class=" flaticon-irrigation" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="pq-service-img-info">
+                                        <div class="pq-service-img">
+                                            <img loading="lazy" decoding="async" decoding="async" src="image/service/style-4/service-img-20.webp"
+                                                alt="service image">
+                                        </div>
+                                    </div>
+                                    <p class="pq-service-box-description">Integrated solutions to identify and manage
+                                        pests and diseases using
+                                        eco-friendly strategies.</p>
+                                    <div class="pq-btn-container">
+                                        <a class="pq-button pq-button-link" href="our-service.html">
+                                            <div class="pq-button-block">
+                                                <span class="pq-button-text">Read More</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-us pq-bg-primary stackly-about-feature">
+        <div class="container">
+
+            <div class="pq-about-us-items">
+                <div class="pq-about-media">
+                    <div class="pq-image-border">
+                        <img loading="lazy" decoding="async" src="image/about/h3-about-us-img-1.webp" alt="about-image">
+                    </div>
+                    <img loading="lazy" decoding="async" class="pq-image-4 wow zoomIn" src="image/about/h3-about-us-img-2.webp" alt="about-image">
+                </div>
+
+                <div class="pq-about-us-info">
+                    <div class="pq-section-title">
+                        <div class="pq-title">
+                            <div class="pq-title-sub-title">
+                                <img loading="lazy" decoding="async" src="image/section-image/group_14610462.webp" alt="image">
+                                <span>About Stackly</span>
+                            </div>
+                            <h5 class="pq-title-hadding">Cultivating a Sustainable <span>Future</span></h5>
+                            <p class="pq-title-description pq-text-white">With a strong foundation in agricultural
+                                science
+                                and technology, Stackly aims to empower farmers through education and resources. We
+                                believe
+                                that informed decisions lead to better harvests and a healthier planet.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="pq-list">
+                                <li class="pq-list-item">
+                                    <i aria-hidden="true" class=" flaticon-next"></i>
+                                    <span class="pq-list-description">Trusted Gardening Partners</span>
+                                </li>
+
+                                <li class="pq-list-item">
+                                    <i aria-hidden="true" class=" flaticon-next"></i>
+                                    <span class="pq-list-description">Award Winning Company</span>
+                                </li>
+
+                                <li class="pq-list-item">
+                                    <i aria-hidden="true" class=" flaticon-next"></i>
+                                    <span class="pq-list-description">Shipping Cost Low</span>
+                                </li>
+
+                                <li class="pq-list-item">
+                                    <i aria-hidden="true" class=" flaticon-next"></i>
+                                    <span class="pq-list-description">Crop Production</span>
+                                </li>
+
+                                <li class="pq-list-item">
+                                    <i aria-hidden="true" class=" flaticon-next"></i>
+                                    <span class="pq-list-description">Organic Farming Support</span>
+                                </li>
+                            </ul>
+
+                            <div class="pq-btn-container mt-4">
+                                <a class="pq-button pq-button-flat" href="#">
+                                    <span class="text">read more</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="pq-image-border wow zoomIn">
+                                <img loading="lazy" decoding="async" src="image/about/h3-about-us-img-3.webp" alt="about-image">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio stackly-certification-section">
+  <div class="container">
+    <div class="pq-section-title text-center wow fadeInUp stackly-certification-heading">
+      <div class="pq-title">
+        <div class="pq-title-sub-title justify-content-center">
+          <img loading="lazy" decoding="async" src="image/section-image/group_1727.webp" alt="">
+          <span>Organic Certification</span>
+        </div>
+        <h5 class="pq-title-hadding">By Using Our Products You <span>Choose Health</span></h5>
+      </div>
+    </div>
+    <div class="stackly-gallery-grid">
+      <article class="stackly-gallery-card">
+      <a class="stackly-gallery-card-image" href="image/portfolio/style-1/Project-image-9.webp" aria-label="View Fresh food firm">
+        <img src="image/portfolio/style-1/Project-image-9.webp" alt="portfolio-img" loading="lazy" decoding="async">
+      </a>
+      <div class="stackly-gallery-card-content">
+        <span>Agroforestry</span>
+        <h3>Fresh food firm</h3>
+      </div>
+    </article>
+      <article class="stackly-gallery-card">
+      <a class="stackly-gallery-card-image" href="image/portfolio/style-1/Project-image-2-1.webp" aria-label="View Agriculture Products">
+        <img src="image/portfolio/style-1/Project-image-2-1.webp" alt="portfolio-img" loading="lazy" decoding="async">
+      </a>
+      <div class="stackly-gallery-card-content">
+        <span>Farm Safety</span>
+        <h3>Agriculture Products</h3>
+      </div>
+    </article>
+      <article class="stackly-gallery-card">
+      <a class="stackly-gallery-card-image" href="image/portfolio/style-1/Project-image-8.webp" aria-label="View Fresh and Natural">
+        <img src="image/portfolio/style-1/Project-image-8.webp" alt="portfolio-img" loading="lazy" decoding="async">
+      </a>
+      <div class="stackly-gallery-card-content">
+        <span>Farmers’ Markets</span>
+        <h3>Fresh and Natural</h3>
+      </div>
+    </article>
+      <article class="stackly-gallery-card">
+      <a class="stackly-gallery-card-image" href="image/portfolio/style-1/Project-image-6.webp" aria-label="View Organic Products">
+        <img src="image/portfolio/style-1/Project-image-6.webp" alt="portfolio-img" loading="lazy" decoding="async">
+      </a>
+      <div class="stackly-gallery-card-content">
+        <span>Farmers’ Markets</span>
+        <h3>Organic Products</h3>
+      </div>
+    </article>
+      <article class="stackly-gallery-card">
+      <a class="stackly-gallery-card-image" href="image/portfolio/style-1/Project-image-4-1.webp" aria-label="View Fertilizers & Pesticides">
+        <img src="image/portfolio/style-1/Project-image-4-1.webp" alt="portfolio-img" loading="lazy" decoding="async">
+      </a>
+      <div class="stackly-gallery-card-content">
+        <span>Organic Fertilizers</span>
+        <h3>Fertilizers & Pesticides</h3>
+      </div>
+    </article>
+      <article class="stackly-gallery-card">
+      <a class="stackly-gallery-card-image" href="image/portfolio/style-1/Project-image-7.webp" aria-label="View Grocery Foods">
+        <img src="image/portfolio/style-1/Project-image-7.webp" alt="portfolio-img" loading="lazy" decoding="async">
+      </a>
+      <div class="stackly-gallery-card-content">
+        <span>Organic Fertilizers</span>
+        <h3>Grocery Foods</h3>
+      </div>
+    </article>
+      <article class="stackly-gallery-card">
+      <a class="stackly-gallery-card-image" href="image/portfolio/style-1/Project-image-3-1.webp" aria-label="View Leverage Fluid">
+        <img src="image/portfolio/style-1/Project-image-3-1.webp" alt="portfolio-img" loading="lazy" decoding="async">
+      </a>
+      <div class="stackly-gallery-card-content">
+        <span>Irrigation</span>
+        <h3>Leverage Fluid</h3>
+      </div>
+    </article>
+      <article class="stackly-gallery-card">
+      <a class="stackly-gallery-card-image" href="image/portfolio/style-1/Project-image-10.webp" aria-label="View Eco and Agriculture">
+        <img src="image/portfolio/style-1/Project-image-10.webp" alt="portfolio-img" loading="lazy" decoding="async">
+      </a>
+      <div class="stackly-gallery-card-content">
+        <span>Farm Safety</span>
+        <h3>Eco and Agriculture</h3>
+      </div>
+    </article>
+      <article class="stackly-gallery-card">
+      <a class="stackly-gallery-card-image" href="image/portfolio/style-1/Project-image-5.webp" aria-label="View Fresh and Natural">
+        <img src="image/portfolio/style-1/Project-image-5.webp" alt="portfolio-img" loading="lazy" decoding="async">
+      </a>
+      <div class="stackly-gallery-card-content">
+        <span>Farm Safety</span>
+        <h3>Fresh and Natural</h3>
+      </div>
+    </article>
+      <article class="stackly-gallery-card">
+      <a class="stackly-gallery-card-image" href="image/portfolio/style-1/Project-image-1-1.webp" aria-label="View Water Irrigation">
+        <img src="image/portfolio/style-1/Project-image-1-1.webp" alt="portfolio-img" loading="lazy" decoding="async">
+      </a>
+      <div class="stackly-gallery-card-content">
+        <span>Irrigation</span>
+        <h3>Water Irrigation</h3>
+      </div>
+    </article>
+    </div>
+  </div>
+</section>
+
+    <!-- Tab -->
+    <section class="tab pq-bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pq-section-title text-center wow fadeInUp">
+                        <div class="pq-title">
+                            <div class="pq-title-sub-title justify-content-center">
+                                <img loading="lazy" decoding="async" src="image/section-image/group_1727.webp" alt="image">
+                                <span>Stackly Products</span>
+                            </div>
+                            <h5 class="pq-title-hadding">We growth a large <span>harvest</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="pq-tabs-1 wow fadeInUp">
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist"><a
+                                class="pq-tabs nav-item nav-link active" id="nav-home-0" data-bs-toggle="tab"
+                                href="#nav-0" role="tab" aria-controls="nav-home-0" aria-selected="true"><i
+                                    class=""></i><span>Banana</span></a><a class="pq-tabs nav-item nav-link "
+                                id="nav-home-1" data-bs-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-home-1"
+                                aria-selected="true"><i class=""></i><span>Brinjal</span></a><a
+                                class="pq-tabs nav-item nav-link " id="nav-home-2" data-bs-toggle="tab" href="#nav-2"
+                                role="tab" aria-controls="nav-home-2" aria-selected="true"><i
+                                    class=""></i><span>Cabbage</span></a><a class="pq-tabs nav-item nav-link "
+                                id="nav-home-3" data-bs-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-home-3"
+                                aria-selected="true"><i class=""></i><span>Carrot</span></a><a
+                                class="pq-tabs nav-item nav-link " id="nav-home-4" data-bs-toggle="tab" href="#nav-4"
+                                role="tab" aria-controls="nav-home-4" aria-selected="true"><i
+                                    class=""></i><span>Cauliflower</span></a><a class="pq-tabs nav-item nav-link "
+                                id="nav-home-5" data-bs-toggle="tab" href="#nav-5" role="tab" aria-controls="nav-home-5"
+                                aria-selected="true"><i class=""></i><span>Kiwi</span></a></div>
+                        <div class="tab-content text-" id="nav-tabContent">
+                            <div class="tab-pane fade show  active" id="nav-0" role="tabpanel"
+                                aria-labelledby="nav-home-0">
+                                <div class="row align-items-center">
+
+                                    <div class="col-lg-6">
+                                        <div class="pq-tab-info">
+                                            <span class="pq-tabs-subtitle">Customer Fevorite</span>
+                                            <h2 class="pq-tabs-title">Banana</h2>
+
+                                            <div class="pq-tabs-icon"><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                                            <span class="pq-tab-price">$80.00</span>
+
+                                            <p class="pq-tabs-description">Bananas are incredibly versatile and can be
+                                                enjoyed in various
+                                                ways. Eat them fresh as a convenient snack, add them to smoothies for
+                                                natural sweetness,
+                                                slice them onto cereal or yogurt, or incorporate them into baked goods
+                                                like muffins and
+                                                bread. </p>
+                                            <div class="pq-btn-container">
+                                                <a class="pq-button pq-button-flat" href="#">
+                                                    <div class="pq-button-block">
+                                                        <span class="pq-button-text">Buy Now</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="pq-tabs-img">
+                                            <img loading="lazy" decoding="async" decoding="async" src="image/tab/about-bottom-image-1.webp"
+                                                class="pq-full-width" alt="seo-image" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="pq-tab-img-info">
+                                            <div class="pq-tab-main-image">
+                                                <img loading="lazy" decoding="async" decoding="async" src="image/tab/shop-fancybox-i-mg-6.webp"
+                                                    class="pq-full-width" alt="seo-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade show  " id="nav-1" role="tabpanel" aria-labelledby="nav-home-1">
+                                <div class="row flex-row-reverse align-items-center">
+
+                                    <div class="col-lg-6">
+                                        <div class="pq-tab-info">
+                                            <span class="pq-tabs-subtitle">Customer Fevorite</span>
+                                            <h2 class="pq-tabs-title">Brinjal</h2>
+
+                                            <div class="pq-tabs-icon"><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                                            <span class="pq-tab-price">$60.00</span>
+
+                                            <p class="pq-tabs-description">Bananas are incredibly versatile and can be
+                                                enjoyed in various
+                                                ways. Eat them fresh as a convenient snack, add them to smoothies for
+                                                natural sweetness,
+                                                slice them onto cereal or yogurt, or incorporate them into baked goods
+                                                like muffins and
+                                                bread. </p>
+                                            <div class="pq-btn-container">
+                                                <a class="pq-button pq-button-flat" href="#">
+                                                    <div class="pq-button-block">
+                                                        <span class="pq-button-text">Buy Now</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="pq-tabs-img">
+                                            <img loading="lazy" decoding="async" decoding="async" src="image/tab/about-bottom-image-1.webp"
+                                                class="pq-full-width" alt="seo-image" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="pq-tab-img-info">
+                                            <div class="pq-tab-main-image">
+                                                <img loading="lazy" decoding="async" decoding="async" src="image/tab/shop-fancybox-img-3.webp"
+                                                    class="pq-full-width" alt="seo-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade show  " id="nav-2" role="tabpanel" aria-labelledby="nav-home-2">
+                                <div class="row align-items-center">
+
+                                    <div class="col-lg-6">
+                                        <div class="pq-tab-info">
+                                            <span class="pq-tabs-subtitle">Customer Fevorite</span>
+                                            <h2 class="pq-tabs-title">Cabbage</h2>
+
+                                            <div class="pq-tabs-icon"><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                                            <span class="pq-tab-price">$40.00</span>
+
+                                            <p class="pq-tabs-description">Bananas are incredibly versatile and can be
+                                                enjoyed in various
+                                                ways. Eat them fresh as a convenient snack, add them to smoothies for
+                                                natural sweetness,
+                                                slice them onto cereal or yogurt, or incorporate them into baked goods
+                                                like muffins and
+                                                bread. </p>
+                                            <div class="pq-btn-container">
+                                                <a class="pq-button pq-button-flat" href="#">
+                                                    <div class="pq-button-block">
+                                                        <span class="pq-button-text">Buy Now</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="pq-tabs-img">
+                                            <img loading="lazy" decoding="async" decoding="async" src="image/tab/about-bottom-image-1.webp"
+                                                class="pq-full-width" alt="seo-image" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="pq-tab-img-info">
+                                            <div class="pq-tab-main-image">
+                                                <img loading="lazy" decoding="async" decoding="async" src="image/tab/shop-fancybox-img-4.webp"
+                                                    class="pq-full-width" alt="seo-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade show  " id="nav-3" role="tabpanel" aria-labelledby="nav-home-3">
+                                <div class="row flex-row-reverse align-items-center">
+
+                                    <div class="col-lg-6">
+                                        <div class="pq-tab-info">
+                                            <span class="pq-tabs-subtitle">Customer Fevorite</span>
+                                            <h2 class="pq-tabs-title">Carrot</h2>
+
+                                            <div class="pq-tabs-icon"><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                                            <span class="pq-tab-price">$100.00</span>
+
+                                            <p class="pq-tabs-description">Bananas are incredibly versatile and can be
+                                                enjoyed in various
+                                                ways. Eat them fresh as a convenient snack, add them to smoothies for
+                                                natural sweetness,
+                                                slice them onto cereal or yogurt, or incorporate them into baked goods
+                                                like muffins and
+                                                bread. </p>
+                                            <div class="pq-btn-container">
+                                                <a class="pq-button pq-button-flat" href="#">
+                                                    <div class="pq-button-block">
+                                                        <span class="pq-button-text">Buy Now</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="pq-tabs-img">
+                                            <img loading="lazy" decoding="async" decoding="async" src="image/tab/about-bottom-image-1.webp"
+                                                class="pq-full-width" alt="seo-image" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="pq-tab-img-info">
+                                            <div class="pq-tab-main-image">
+                                                <img loading="lazy" decoding="async" decoding="async" src="image/tab/shop-fancybox-img-5.webp"
+                                                    class="pq-full-width" alt="seo-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade show  " id="nav-4" role="tabpanel" aria-labelledby="nav-home-4">
+                                <div class="row align-items-center">
+
+                                    <div class="col-lg-6">
+                                        <div class="pq-tab-info">
+                                            <span class="pq-tabs-subtitle">Customer Fevorite</span>
+                                            <h2 class="pq-tabs-title">Cauliflower</h2>
+
+                                            <div class="pq-tabs-icon"><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                                            <span class="pq-tab-price">$70.00</span>
+
+                                            <p class="pq-tabs-description">Bananas are incredibly versatile and can be
+                                                enjoyed in various
+                                                ways. Eat them fresh as a convenient snack, add them to smoothies for
+                                                natural sweetness,
+                                                slice them onto cereal or yogurt, or incorporate them into baked goods
+                                                like muffins and
+                                                bread. </p>
+                                            <div class="pq-btn-container">
+                                                <a class="pq-button pq-button-flat" href="#">
+                                                    <div class="pq-button-block">
+                                                        <span class="pq-button-text">Buy Now</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="pq-tabs-img">
+                                            <img loading="lazy" decoding="async" decoding="async" src="image/tab/about-bottom-image-1.webp"
+                                                class="pq-full-width" alt="seo-image" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="pq-tab-img-info">
+                                            <div class="pq-tab-main-image">
+                                                <img loading="lazy" decoding="async" decoding="async" src="image/tab/shop-fancybox-img-6.webp"
+                                                    class="pq-full-width" alt="seo-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade show " id="nav-5" role="tabpanel" aria-labelledby="nav-home-5">
+                                <div class="row flex-row-reverse align-items-center">
+
+                                    <div class="col-lg-6">
+                                        <div class="pq-tab-info">
+                                            <span class="pq-tabs-subtitle">Customer Fevorite</span>
+                                            <h2 class="pq-tabs-title">Kiwi</h2>
+
+                                            <div class="pq-tabs-icon"><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
+
+                                            <span class="pq-tab-price">$100.00</span>
+
+                                            <p class="pq-tabs-description">Bananas are incredibly versatile and can be
+                                                enjoyed in various
+                                                ways. Eat them fresh as a convenient snack, add them to smoothies for
+                                                natural sweetness,
+                                                slice them onto cereal or yogurt, or incorporate them into baked goods
+                                                like muffins and
+                                                bread. </p>
+                                            <div class="pq-btn-container">
+                                                <a class="pq-button pq-button-flat" href="#">
+                                                    <div class="pq-button-block">
+                                                        <span class="pq-button-text">Buy Now</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="pq-tabs-img">
+                                            <img loading="lazy" decoding="async" decoding="async" src="image/tab/about-bottom-image-1.webp"
+                                                class="pq-full-width" alt="seo-image" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="pq-tab-img-info">
+                                            <div class="pq-tab-main-image">
+                                                <img loading="lazy" decoding="async" decoding="async" src="image/tab/shop-fancybox-img-2.webp"
+                                                    class="pq-full-width" alt="seo-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price -->
+    <section class="portfolio stackly-pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pq-section-title text-center wow fadeInUp">
+                        <div class="pq-title">
+                            <div class="pq-title-sub-title justify-content-center">
+                                <img loading="lazy" decoding="async" src="image/section-image/group_1727.webp" alt="image">
+                                <span>Prices</span>
+                            </div>
+                            <h5 class="pq-title-hadding">Stackly Choose Your Perfect <span>Pricing Plan</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="pq-pricing-plan pq-style-1 wow fadeInUp">
+
+                        <h5 class="pq-pricing-title">Basic Plan</h5>
+
+                        <ul class="pq-list-info">
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Soil Analysis</span>
+                            </li>
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Irrigation Solutions</span>
+                            </li>
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Pest &#038; Disease Control</span>
+                            </li>
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Seasonal Monitoring &#038; Support</span>
+                            </li>
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Farm Efficiency Reports</span>
+                            </li>
+                        </ul>
+
+                        <div class="pq-price">
+                            <span class="pq-amount">$99</span>
+                            <span class="price-month">/month</span>
+                        </div>
+                        <div class="pq-btn-container">
+                            <a class="pq-button pq-button-link" href="pricing-plan.html">
+                                <div class="pq-button-block">
+                                    <span class="pq-button-text">Get Started</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <div class="pq-pricing-plan pq-style-1 pq-active wow fadeInUp">
+
+                        <h5 class="pq-pricing-title">Standard Plan</h5>
+
+                        <ul class="pq-list-info">
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Soil Analysis</span>
+                            </li>
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Irrigation Solutions</span>
+                            </li>
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Pest &#038; Disease Control</span>
+                            </li>
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Seasonal Monitoring &#038; Support</span>
+                            </li>
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Farm Efficiency Reports</span>
+                            </li>
+                        </ul>
+
+                        <div class="pq-price">
+                            <span class="pq-amount">$199</span>
+                            <span class="price-month">/month</span>
+                        </div>
+                        <div class="pq-btn-container">
+                            <a class="pq-button pq-button-link" href="pricing-plan.html">
+                                <div class="pq-button-block">
+                                    <span class="pq-button-text">Get Started</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <div class="pq-pricing-plan pq-style-1 wow fadeInUp">
+
+                        <h5 class="pq-pricing-title">Premium Plan</h5>
+
+                        <ul class="pq-list-info">
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Soil Analysis</span>
+                            </li>
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Irrigation Solutions</span>
+                            </li>
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Pest &#038; Disease Control</span>
+                            </li>
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Seasonal Monitoring &#038; Support</span>
+                            </li>
+                            <li class="pq-list-item">
+                                <i aria-hidden="true" class=""></i>
+                                <span>Farm Efficiency Reports</span>
+                            </li>
+                        </ul>
+
+                        <div class="pq-price">
+                            <span class="pq-amount">$399</span>
+                            <span class="price-month">/month</span>
+                        </div>
+                        <div class="pq-btn-container">
+                            <a class="pq-button pq-button-link" href="pricing-plan.html">
+                                <div class="pq-button-block">
+                                    <span class="pq-button-text">Get Started</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial pq-bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pq-section-title text-center wow fadeInUp">
+                        <div class="pq-title">
+                            <div class="pq-title-sub-title justify-content-center">
+                                <img loading="lazy" decoding="async" src="image/section-image/group_14610462.webp" alt="image">
+                                <span>Client Testimonials</span>
+                            </div>
+                            <h5 class="pq-title-hadding">What Farmers Are Saying <span>About Agrite</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="pq-testimonial-box-slider pq-style-3 wow fadeInUp">
+                        <div class="owl-carousel" data-dots="true" data-nav="true" data-desk_num="1" data-lap_num="1"
+                            data-tab_num="1" data-mob_num="1" data-mob_sm="1" data-autoplay="false" data-loop="false"
+                            data-center="true" data-margin="60">
+                            <div class="item">
+                                <div class="pq-testimonial-box pq-style-3 text-left">
+                                    <div class="pq-testimonial-top">
+                                        <h2 class="pq-testimonial-title">“Great Services”</h2>
+
+                                        <div class="pq-testimonial-icon">
+                                            <i class="pt pt-flaticon-quote"></i>
+                                        </div>
+                                    </div>
+                                    <div class="pq-testimonial-media">
+                                        <div class="pq-testimonial-img">
+                                            <img loading="lazy" decoding="async" decoding="async"
+                                                src="image/testimonial-box/style-2/testimonial-img-5.webp"
+                                                alt="testimonial-img">
+                                        </div>
+
+                                        <div class="pq-testimonial-meta">
+                                            <h5 class="pq-testimonial-title">James Finch</h5>
+
+                                            <span class="pq-testimonial-designation">PHYSICAL THERAPIST</span>
+                                        </div>
+                                    </div>
+                                    <div class="pq-testimonial-info">
+                                        <p class="pq-testimonial-description">Stackly transformed the way we farm. Their
+                                            precision agriculture tools and
+                                            expert advice helped us boost our crop yield by 30%! Highly recommend their
+                                            services. With Stackly’s
+                                            support, we’ve been able to transition to organic farming smoothly. Their
+                                            team guided us every step of the
+                                            way, and our produce quality has never been better. Stackly has been a
+                                            trusted partner in our farming
+                                            journey for years.</p>
+
+                                        <div class="pq-testimonial-star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="pq-testimonial-box pq-style-3 text-left">
+                                    <div class="pq-testimonial-top">
+                                        <h2 class="pq-testimonial-title">“Great Services”</h2>
+
+                                        <div class="pq-testimonial-icon">
+                                            <i class="pt pt-flaticon-quote"></i>
+                                        </div>
+                                    </div>
+                                    <div class="pq-testimonial-media">
+                                        <div class="pq-testimonial-img">
+                                            <img loading="lazy" decoding="async" decoding="async"
+                                                src="image/testimonial-box/style-2/testimonial-img-1-1.webp"
+                                                alt="testimonial-img">
+                                        </div>
+
+                                        <div class="pq-testimonial-meta">
+                                            <h5 class="pq-testimonial-title">Robert Shiv</h5>
+
+                                            <span class="pq-testimonial-designation">PHYSICAL THERAPIST</span>
+                                        </div>
+                                    </div>
+                                    <div class="pq-testimonial-info">
+                                        <p class="pq-testimonial-description">Stackly transformed the way we farm. Their
+                                            precision agriculture tools and
+                                            expert advice helped us boost our crop yield by 30%! Highly recommend their
+                                            services. With Stackly’s
+                                            support, we’ve been able to transition to organic farming smoothly. Their
+                                            team guided us every step of the
+                                            way, and our produce quality has never been better. Stackly has been a
+                                            trusted partner in our farming
+                                            journey for years.</p>
+
+                                        <div class="pq-testimonial-star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="pq-testimonial-box pq-style-3 text-left">
+                                    <div class="pq-testimonial-top">
+                                        <h2 class="pq-testimonial-title">“Great Services”</h2>
+
+                                        <div class="pq-testimonial-icon">
+                                            <i class="pt pt-flaticon-quote"></i>
+                                        </div>
+                                    </div>
+                                    <div class="pq-testimonial-media">
+                                        <div class="pq-testimonial-img">
+                                            <img loading="lazy" decoding="async" decoding="async"
+                                                src="image/testimonial-box/style-2/testimonial-img-2.webp"
+                                                alt="testimonial-img">
+                                        </div>
+
+                                        <div class="pq-testimonial-meta">
+                                            <h5 class="pq-testimonial-title">David Jamis</h5>
+
+                                            <span class="pq-testimonial-designation">PHYSICAL THERAPIST</span>
+                                        </div>
+                                    </div>
+                                    <div class="pq-testimonial-info">
+                                        <p class="pq-testimonial-description">Stackly transformed the way we farm. Their
+                                            precision agriculture tools and
+                                            expert advice helped us boost our crop yield by 30%! Highly recommend their
+                                            services. With Stackly’s
+                                            support, we’ve been able to transition to organic farming smoothly. Their
+                                            team guided us every step of the
+                                            way, and our produce quality has never been better. Stackly has been a
+                                            trusted partner in our farming
+                                            journey for years.</p>
+
+                                        <div class="pq-testimonial-star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faq -->
+    <section class="faq">
+        <div class="container">
+            <div class="row flex-column-reverse flex-xl-row">
+                <div class="col-xl-6 pe-xl-5 mt-4 mt-xl-0 wow fadeInLeft">
+                    <div class="pq-image-border">
+                        <img loading="lazy" decoding="async" class="" src="image/accordion/accordion-img-1.webp" alt="accordion-image">
+                    </div>
+
+                    <div class="pq-counter pq-counter-style-2">
+                        <div class="pq-counter-icon">
+                            <i class=" flaticon-agriculture"></i>
+                        </div>
+                        <div class="pq-count-box">
+                            <div class="pq-counter-num-prefix">
+                                <h5 class="pq-count timer" data-count="70" data-pq-duration="2000">70</h5>
+                                <span class="pq-counter-prefix">%</span>
+                            </div>
+                            <p class="pq-counter-description">Agricultural Techniques</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 wow fadeInRight">
+                    <div class="pq-section-title mb-4">
+                        <div class="pq-title">
+                            <div class="pq-title-sub-title">
+                                <img loading="lazy" decoding="async" src="image/section-image/group_1727.webp" alt="image">
+                                <span>Frequently Asked Questions</span>
+                            </div>
+                            <h5 class="pq-title-hadding">Support Frequently Asked <span>Questions</span></h5>
+                        </div>
+                    </div>
+
+                    <div class="pq-accordion-block ">
+                        <div class="pq-accordion-box pq-active 1">
+                            <div class="pq-ad-title">
+                                <h4 class="ad-title-text">
+                                    Agriculture FAQ: Helping You Grow
+                                    <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
+                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
+                                </h4>
+                            </div>
+                            <div class="pq-accordion-details">
+                                <p class="pq-detail-text"> Get answers to common questions about our agricultural
+                                    products, services, and
+                                    practices. From soil health to crop management, explore how we can help you grow.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pq-accordion-box 2">
+                            <div class="pq-ad-title">
+                                <h4 class="ad-title-text">
+                                    Common Questions from Farmers
+                                    <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
+                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
+                                </h4>
+                            </div>
+                            <div class="pq-accordion-details">
+                                <p class="pq-detail-text"> Get answers to common questions about our agricultural
+                                    products, services, and
+                                    practices. From soil health to crop management, explore how we can help you grow.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pq-accordion-box 3">
+                            <div class="pq-ad-title">
+                                <h4 class="ad-title-text">
+                                    Need Help? Check Our FAQ
+
+                                    <i aria-hidden="true" class="ion ion-ios-arrow-down active"></i><i
+                                        aria-hidden="true" class="ion ion-ios-arrow-up inactive"></i>
+                                </h4>
+                            </div>
+                            <div class="pq-accordion-details">
+                                <p class="pq-detail-text"> Find the information you need on everything from soil testing
+                                    to pest control.
+                                    Our FAQ section provides detailed insights into our farming practices and services.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <!-- Stackly Organic Farming Footer -->
+<!-- Stackly Organic Farming Footer -->
+<footer id="pq-footer" class="stackly-organic-footer">
+  <div class="stackly-footer-main">
+    <div class="stackly-footer-grid">
+      <div class="stackly-footer-about">
+        <a class="stackly-footer-brand" href="index.html"><img loading="lazy" decoding="async" src="image/logo/logo2.webp" alt="Stackly"></a>
+        <p>Discover the goodness of organic farming with Stackly. We share sustainable growing practices, natural solutions and fresh ideas to help cultivate a healthier tomorrow.</p>
+        <div class="stackly-footer-social" aria-label="Social links">
+          <a href="mailto:support@stackly.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/" aria-label="X"><svg class="stackly-x-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.9 2h3.1l-6.78 7.75L23.2 22h-6.25l-4.9-7.42L5.56 22H2.4l7.25-8.29L1.9 2h6.4l4.43 6.77L18.9 2zm-1.1 18h1.73L7.36 3.9H5.5L17.8 20z"/></svg></a>
+          <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="stackly-footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="pages.html">Pages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="stackly-footer-focus">
+        <h3>Organic Farming</h3>
+        <ul>
+          <li><a href="404.html">Our Approach</a></li>
+          <li><a href="404.html">Farming Projects</a></li>
+          <li><a href="404.html">Farming Insights</a></li>
+          <li><a href="404.html">Organic Gallery</a></li>
+          <li><a href="404.html">Get Support</a></li>
+        </ul>
+      </div>
+      <div class="stackly-footer-connect">
+        <h3>Stay Connected</h3>
+        <p>Receive organic farming updates, seasonal tips and the latest news from Stackly.</p>
+        <form class="stackly-newsletter" action="#" method="post">
+          <label class="visually-hidden" for="stackly-footer-email">Email ID</label>
+          <input id="stackly-footer-email" type="email" name="email" placeholder="Email ID" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="stackly-footer-contact-row">
+      <span><span class="stackly-contact-icon"><i class="fas fa-map-marker-alt"></i></span><span>MMR Complex, Salem, TN, India</span></span>
+      <a href="mailto:support@stackly.com"><span class="stackly-contact-icon"><i class="fas fa-envelope"></i></span><span>support@stackly.com</span></a>
+      <a href="tel:+917010792750"><span class="stackly-contact-icon"><i class="fas fa-phone-alt"></i></span><span>+91-7010792750</span></a>
+    </div>
+  </div>
+  <div class="stackly-footer-bottom">
+    <div><span>© 2026 STACKLY. All Rights Reserved.</span></div>
+    <div class="stackly-footer-legal"><a href="404.html">Privacy Policy</a><a href="404.html">Terms &amp; Conditions</a></div>
+  </div>
+</footer>
+    <!-- back-to-top -->
+    <div id="back-to-top">
+        <a class="top" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+    </div>
+
+    <!-- jquery js -->
+    <script src="js/jquery-3.7.1.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- rev slider -->
+    <script src="js/rev-custom.js"></script>
+    <script src="rev/js/rs6.min.js"></script>
+    <script src="rev/js/rbtools.min.js"></script>
+
+    <!-- gsap js -->
+    <script src="js/gsap.min.js"></script>
+
+    <!-- scrolltrigger js -->
+    <script src="js/ScrollTrigger.min.js"></script>
+
+    <!-- Magnafic Popup js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- Owl js -->
+    <script src="js/owl.carousel.js"></script>
+
+    <!-- isotope js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <!-- load more js -->
+    <script src="js/load-more.js"></script>
+
+    <!-- WOW -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+<script>
+(function () {
+  var current = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
+  document.querySelectorAll(".stackly-main-nav a[href]").forEach(function (link) {
+    var target = (link.getAttribute("href").split("?")[0].split("#")[0] || "").toLowerCase();
+    if (target === current) {
+      link.classList.add("is-current");
+      link.setAttribute("aria-current", "page");
+      var item = link.closest("li");
+      if (item) item.classList.add("is-current");
+    }
+  });
+})();
+</script>
+
+<script src="js/stackly-form-validation.js"></script>
+
+    <!-- AOS animation engine -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script id="stackly-aos-setup">
+    (function () {
+      var motionTypes = ['fade-up','fade-down','fade-left','fade-right','fade-up-right','fade-up-left','fade-down-right','fade-down-left','flip-left','flip-right','flip-up','flip-down','zoom-in','zoom-in-up','zoom-in-down','zoom-in-left','zoom-in-right','zoom-out','zoom-out-up','zoom-out-down','zoom-out-left','zoom-out-right','slide-up','slide-down','slide-left','slide-right'];
+      function setupStacklyAOS() {
+        var selectors = 'main section, .pq-section, .pq-service-box, .pq-blog-post, .pq-portfolio-box, .pq-icon-box, .pq-image-box, .pq-team-box, .pq-counter, .pq-testimonial-box, .pq-client-box, .pq-breadcrumb, .pq-button, .pq-section-title, .pq-contact-box';
+        var nodes = document.querySelectorAll(selectors);
+        var index = 0;
+        nodes.forEach(function (node) {
+          if (node.closest('#pq-loading') || node.hasAttribute('data-aos') || node.matches('header, footer, nav')) return;
+          node.setAttribute('data-aos', motionTypes[index % motionTypes.length]);
+          node.setAttribute('data-aos-duration', (650 + (index % 4) * 150).toString());
+          node.setAttribute('data-aos-easing', 'ease-out-cubic');
+          node.setAttribute('data-aos-once', 'true');
+          if (node.matches('.pq-service-box, .pq-blog-post, .pq-portfolio-box, .pq-icon-box, .pq-image-box, .pq-team-box, .pq-client-box')) node.setAttribute('data-aos-delay', ((index % 3) * 80).toString());
+          index++;
+        });
+        document.body.classList.add('stackly-motion-ready');
+        if (window.AOS) { AOS.init({ duration: 850, easing: 'ease-out-cubic', once: true, mirror: false, offset: 70, disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches }); }
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setupStacklyAOS); else setupStacklyAOS();
+      window.addEventListener('load', function () { if (window.AOS) AOS.refreshHard(); });
+    })();
+    </script>
+
+
+<script id="stackly-content-click-redirect">
+(function () {
+  "use strict";
+  document.addEventListener("click", function (event) {
+    var target = event.target && event.target.closest
+      ? event.target.closest("a, button, [role='button'], [onclick], input[type='button'], input[type='submit']")
+      : null;
+    if (!target) return;
+
+    /* Preserve the homepage's in-page produce tabs and their existing content switching. */
+    if (target.closest(".pq-tabs[data-bs-toggle='tab'], .pq-tabs[role='tab']")) return;
+
+    /* Keep header/footer navigation, all form interactions, and direct contact actions intact. */
+    if (target.closest("header, footer, .stackly-organic-header, .stackly-organic-footer")) return;
+    if (target.closest("form, .wpcf7, .contact-form, .newsletter-form, [data-form]")) return;
+    if (target.matches("a[href^='mailto:'], a[href^='tel:']")) return;
+    if (target.closest("address, .address, [class*='address']")) return;
+    if (target.matches("input, select, textarea, label")) return;
+
+    event.preventDefault();
+    event.stopPropagation();
+    window.location.href = "404.html";
+  }, true);
+})();
+</script>
+
+
+<script id="stackly-home-hero-services-redirect">
+(function () {
+  document.addEventListener("click", function (event) {
+    var layer = event.target && event.target.closest ? event.target.closest("rs-layer") : null;
+    if (!layer) return;
+    var label = (layer.textContent || "").replace(/\s+/g, " ").trim().toLowerCase();
+    if (label === "see our services") {
+      event.preventDefault();
+      event.stopPropagation();
+      if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+      window.location.href = "404.html";
+    }
+  }, true);
+})();
+</script>
+
+
+<script id="stackly-mobile-navigation-controller">
+(function(){
+  function initStacklyNavigation(){
+    var header=document.getElementById('pq-header');
+    if(!header || header.dataset.stacklyNavInit==='1') return;
+    header.dataset.stacklyNavInit='1';
+    var toggle=header.querySelector('.stackly-nav-toggle');
+    var nav=header.querySelector('.stackly-main-nav');
+    if(!toggle || !nav) return;
+    document.body.classList.add('stackly-mobile-nav-ready');
+    toggle.removeAttribute('data-bs-toggle');
+    toggle.removeAttribute('data-bs-target');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-controls','navbarNavDropdown');
+    function closeMenu(){
+      nav.classList.remove('stackly-nav-open','show');
+      toggle.setAttribute('aria-expanded','false');
+      document.body.classList.remove('stackly-nav-locked');
+    }
+    function openMenu(){
+      nav.classList.add('stackly-nav-open');
+      toggle.setAttribute('aria-expanded','true');
+      document.body.classList.add('stackly-nav-locked');
+    }
+    toggle.addEventListener('click',function(){
+      if(toggle.getAttribute('aria-expanded')==='true') closeMenu(); else openMenu();
+    });
+    nav.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click',function(){ if(window.matchMedia('(max-width: 991px)').matches) closeMenu(); });
+    });
+    window.addEventListener('resize',function(){
+      if(window.innerWidth>991) closeMenu();
+    });
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeMenu(); });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initStacklyNavigation);
+  else initStacklyNavigation();
+})();
+</script>
+
+</body>
+
+</html>
